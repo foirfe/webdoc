@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,QAAQ;CAChB",
+    "sources": [
+        "style.scss",
+        "globals/_reset.scss",
+        "components/_header.scss",
+        "components/_footer.scss",
+        "pages/_index.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
