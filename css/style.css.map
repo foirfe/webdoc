@@ -1,11 +1,12 @@
 {
     "version": 3,
-    "mappings": "AEAA,AAAA,MAAM,CAAC;EACL,KAAK,EAAE,QAAQ;CAChB",
+    "mappings": "AIAA,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,8BAA8B,EAAE,IAAI;CAC7C",
     "sources": [
         "style.scss",
         "globals/_reset.scss",
         "components/_header.scss",
         "components/_footer.scss",
+        "components/_cursor.scss",
         "pages/_index.scss"
     ],
     "names": [],
