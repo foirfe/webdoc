@@ -4,13 +4,209 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Køkkenet</title>
   </head>
   <body class="kniv">
-    <header></header>
+    <header>
+      <a href="https://klank-efterskole.dk/"
+        ><img src="images/klanklogo.png" alt="Klank Efterskole"
+      /></a>
+      <nav>
+        <ul>
+          <li>Fag</li>
+          <li>Om Skolen</li>
+          <li>Kontakt Os</li>
+          <li>Tilmelding</li>
+          <li><i class="fab fa-facebook-square"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-youtube"></i></li>
+        </ul>
+      </nav>
+    </header>
 
-    <main id="page__index">Something</main>
+    <main id="page__index">
+      <img src="images/knifebig.png" alt="Tegnet Kniv" class="storkniv" /><img
+        src="images/tomato.png"
+        alt="Tegnet Tomat"
+        class="tomaten"
+      />
+      <nav id="sidebar">
+        <ul>
+          <li><a href="index.html#vaerdier">Værdier</a></li>
+          <li class="vl"></li>
+          <li><a href="index.html#kostraad">Kostråd</a></li>
+          <li class="vl"></li>
+          <li><a href="index.html#specialkost">Specialkost</a></li>
+          <li class="vl"></li>
+          <li><a href="index.html#maaltider">Måltider</a></li>
+          <li class="vl"></li>
+          <li><a href="index.html#koekkenet">Køkkenet</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>Køkken På Klank</h1>
+        <section>
+          <h2 id="vaerdier">Værdier</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            quia nam voluptatibus, corporis modi asperiores ad nemo laborum
+            praesentium quod quo eligendi consectetur totam excepturi dolor
+            libero, tempore aspernatur quidem illo dolorem laboriosam qui nulla.
+            Consectetur pariatur aut libero enim iste. Culpa quae in, aspernatur
+            dolores soluta enim magnam. Dicta voluptates, veritatis corporis eos
+            doloremque explicabo autem doloribus nam recusandae?
+          </p>
+        </section>
+        <section id="kostraad">
+          <h2>Kostråd</h2>
+          <p>
+            De 10 kostråd er udgangspunkt for vores planlægning og madlavning.
+          </p>
+          <ul id="kostraadlist">
+            <li class="kostraadleft">
+              <div class="kostraadblock">
+                <span class="kostraadlefttext">Spis mindre mættet fedt</span
+                ><span class="kostraadnummer">1</span>
+              </div>
+            </li>
+            <li class="kostraadright">
+              <div class="kostraadblock">
+                <span class="kostraadnummer">2</span>
+                <span class="kostraadrighttext">Spis mindre sukker</span>
+              </div>
+            </li>
+            <li class="kostraadleft">
+              <div class="kostraadblock">
+                <span class="kostraadlefttext">
+                  Spis frugt og mange grøntsager</span
+                ><span class="kostraadnummer">3</span>
+              </div>
+            </li>
+            <li class="kostraadright">
+              <div class="kostraadblock">
+                <span class="kostraadrighttext">
+                  <span class="kostraadnummer">4</span>
+                  Spar varieret, ikke for meget og vær fysisk aktiv</span
+                >
+              </div>
+            </li>
+            <li class="kostraadleft">
+              <div class="kostraadblock">
+                <span class="kostraadlefttext">Spis mad med mindre salt</span>
+                <span class="kostraadnummer">5</span>
+              </div>
+            </li>
+            <li class="kostraadright">
+              <div class="kostraadblock">
+                <span class="kostraadnummer">6</span>
+                <span class="kostraadrighttext">Spis mere fisk</span>
+              </div>
+            </li>
+            <li class="kostraadleft">
+              <div class="kostraadblock">
+                <span class="kostraadlefttext">Vælg fuldkorn</span
+                ><span class="kostraadnummer">7</span>
+              </div>
+            </li>
+            <li class="kostraadright">
+              <div class="kostraadblock">
+                <span class="kostraadnummer">8</span>
+                <span class="kostraadrighttext"
+                  >Vælg magert kød og kødpålæg</span
+                >
+              </div>
+            </li>
+            <li class="kostraadleft">
+              <div class="kostraadblock">
+                <span class="kostraadlefttext">Vælg magre mejeriprodukter</span
+                ><span class="kostraadnummer">9</span>
+              </div>
+            </li>
+            <li class="kostraadright">
+              <div class="kostraadblock">
+                <span class="kostraadnummer">10</span>
+                <span class="kostraadrighttext">Drik Vand</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="specialkost">
+          <h2>Specialkost</h2>
+          Vi tilbyder at lave specialkost hvis dette er aktuelt for nogle af
+          skolens elever.
+          <ul id="specialkostlist">
+            <li id="meatfree">Kødfri</li>
+            <li id="allergies">Allergier</li>
+            <li id="religion">Religion</li>
+          </ul>
+          I starten af hvert skoleår, udarbejder køkkenlederen i samarbejde med
+          eleven/hjemmet et papir på diætens/specialkostens indhold og omfang
+        </section>
+        <section>
+          <h2 id="maaltider">Måltider</h2>
+          <h3>Morgenmad</h3>
+          <p>
+            Lunt hjemmebagt brød med smør/Becel, oste, marmelader. Der tilbydes
+            økologiske surmælksprodukter, hjemmelavet mysli, havregryn,
+            havrefras, cornflakes, økologisk mini- og skummetmælk, frisk
+            udskåret frugt. Som variation laver vi nogle gange øllebrød og
+            havregrød. Hver morgen stilles der kaffe og te frem til eleverne.
+          </p>
+          <h3>Formiddagskaffe</h3>
+          <p>
+            Friskbagt brød eller knækbrød, pålæg, frugt/gulerod, samt vand,
+            kaffe og te.
+          </p>
+          <h3>Middag</h3>
+          <p>
+            Varm hovedret, som serveres på buffet. Mindst 1 gang om ugen
+            serveres der fisk – vegetarretter 1-2 gange om måneden. Til hvert
+            måltid serveres der salat/råkost/grøntsager og nogle gange
+            hjemmebagt brød. Til maden drikkes der koldt vand.
+          </p>
+          <h3>Eftermiddag</h3>
+          <p>
+            En variation af brød, frugt, grønt eller andet. Der vil være adgang
+            til kaffe, te og frisk koldt vand. Fredag er der kage.
+          </p>
+          <h3>Aftensmaden</h3>
+          <p>
+            Kold buffet med lun ret. Hver dag er der 5-6 forskellige slags pålæg
+            med dertilhørende rugbrød og dagens lune/kolde ret. De fleste dage
+            vil der være mulighed for salat eller råkost. Vi serverer fiskepålæg
+            3-4 gange om ugen. Der drikkes vand til maden.
+          </p>
+          <h3>Aftenkaffe</h3>
+          <p>
+            Franskbrød eller grovboller med marmelade og smør samt kaffe/te, ved
+            diverse arrangementer serveres der kage eller andet godt.
+          </p>
+          <h3>Weekend</h3>
+          <p>
+            I weekenderne er alting lidt anderledes. Morgenmaden serveres kl.
+            9.30 og der kan forekommejuice, rundstykker, blødkogte æg,
+            pålægschokolade m.m. Til aften spises der varmt mad, der er dessert
+            lørdag aften og kage søndag eftermiddag.
+          </p>
+        </section>
+        <section>
+          <h2 id="koekkenet">Køkkenet</h2>
+        </section>
+      </article>
+    </main>
     <footer></footer>
     <script src="javascript/javascript.js"></script>
   </body>

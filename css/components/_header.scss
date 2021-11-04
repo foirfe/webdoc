@@ -1,2 +1,13 @@
 header {
+  background-color: #322555;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  ul li {
+    display: inline;
+    padding-left: 2%;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+  }
 }
