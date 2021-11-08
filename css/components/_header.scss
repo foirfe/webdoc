@@ -2,12 +2,16 @@ header {
   background-color: #322555;
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  ul li {
-    display: inline;
-    padding-left: 2%;
+  ul {
+    display: flex;
+    align-items: center;
+  }
+  li {
+    margin-left: 8%;
     width: 100%;
     font-family: "Montserrat", sans-serif;
+    font-size: 1.15em;
   }
 }

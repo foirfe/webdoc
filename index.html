@@ -38,11 +38,13 @@
     </header>
 
     <main id="page__index">
-      <img src="images/knifebig.png" alt="Tegnet Kniv" class="storkniv" /><img
-        src="images/tomato.png"
-        alt="Tegnet Tomat"
-        class="tomaten"
+      <img
+        src="images/knifebig.png"
+        alt="Tegnet Kniv"
+        class="storkniv"
+        id="storkniv"
       />
+      <img src="images/tomato.png" alt="Tegnet Tomat" class="tomaten" />
       <nav id="sidebar">
         <ul>
           <li><a href="index.html#vaerdier">Værdier</a></li>
@@ -57,9 +59,10 @@
         </ul>
       </nav>
       <article>
-        <h1>Køkken På Klank</h1>
+        <h1 id="mainheading">Køkken På Klank</h1>
         <section>
           <h2 id="vaerdier">Værdier</h2>
+
           <h3>
             De værdier vi vægter her i køkkenet på Klank drejer sig primært omkring vores
             kostpolitik. Formålet med vores kostpolitik er:
@@ -78,6 +81,7 @@
               til de generelle kostråd.
             </li>
           </ul>
+
           <p>
             Vi går meget op i at vores maden skal være varieret, spændende, se
             indbydende ud og skal afspejle årets gang. Vi prøver også at
@@ -90,6 +94,7 @@
             Derfor server vi så meget fuldkorn, som muligt. Vi tilbyder også
             frugt og grønt til alle eleverne, og sørge for at det er økologisk.
           </p>
+
         </section>
         <section id="kostraad">
           <h2>Kostråd</h2>
@@ -169,10 +174,11 @@
           Vi tilbyder at lave specialkost hvis dette er aktuelt for nogle af
           skolens elever.
           <ul id="specialkostlist">
-            <li id="meatfree">Kødfri</li>
+            <li id="meatfree" class="specialkostmarked">Kødfri</li>
             <li id="allergies">Allergier</li>
             <li id="religion">Religion</li>
           </ul>
+
           <p>
             På Klank Efterskole tilbyder vi at lave specialkost, hvis dette
             skulle være nødvendigt for nogle af skolens elever. Her hos os er
@@ -205,53 +211,74 @@
             med eleven og hjemmet, et papir på diætens/specialkostens indhold og
             omfang.
           </p>
+
         </section>
         <section>
           <h2 id="maaltider">Måltider</h2>
-          <h3>Morgenmad</h3>
-          <p>
-            Lunt hjemmebagt brød med smør/Becel, oste, marmelader. Der tilbydes
-            økologiske surmælksprodukter, hjemmelavet mysli, havregryn,
-            havrefras, cornflakes, økologisk mini- og skummetmælk, frisk
-            udskåret frugt. Som variation laver vi nogle gange øllebrød og
-            havregrød. Hver morgen stilles der kaffe og te frem til eleverne.
-          </p>
-          <h3>Formiddagskaffe</h3>
-          <p>
-            Friskbagt brød eller knækbrød, pålæg, frugt/gulerod, samt vand,
-            kaffe og te.
-          </p>
-          <h3>Middag</h3>
-          <p>
-            Varm hovedret, som serveres på buffet. Mindst 1 gang om ugen
-            serveres der fisk – vegetarretter 1-2 gange om måneden. Til hvert
-            måltid serveres der salat/råkost/grøntsager og nogle gange
-            hjemmebagt brød. Til maden drikkes der koldt vand.
-          </p>
-          <h3>Eftermiddag</h3>
-          <p>
-            En variation af brød, frugt, grønt eller andet. Der vil være adgang
-            til kaffe, te og frisk koldt vand. Fredag er der kage.
-          </p>
-          <h3>Aftensmaden</h3>
-          <p>
-            Kold buffet med lun ret. Hver dag er der 5-6 forskellige slags pålæg
-            med dertilhørende rugbrød og dagens lune/kolde ret. De fleste dage
-            vil der være mulighed for salat eller råkost. Vi serverer fiskepålæg
-            3-4 gange om ugen. Der drikkes vand til maden.
-          </p>
-          <h3>Aftenkaffe</h3>
-          <p>
-            Franskbrød eller grovboller med marmelade og smør samt kaffe/te, ved
-            diverse arrangementer serveres der kage eller andet godt.
-          </p>
-          <h3>Weekend</h3>
-          <p>
-            I weekenderne er alting lidt anderledes. Morgenmaden serveres kl.
-            9.30 og der kan forekommejuice, rundstykker, blødkogte æg,
-            pålægschokolade m.m. Til aften spises der varmt mad, der er dessert
-            lørdag aften og kage søndag eftermiddag.
-          </p>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <h3 class="slidesheading">Morgenmad</h3>
+              <p class="slidestext">
+                Lunt hjemmebagt brød med smør/Becel, oste, marmelader. Der
+                tilbydes økologiske surmælksprodukter, hjemmelavet mysli,
+                havregryn, havrefras, cornflakes, økologisk mini- og
+                skummetmælk, frisk udskåret frugt. Som variation laver vi nogle
+                gange øllebrød og havregrød. Hver morgen stilles der kaffe og te
+                frem til eleverne.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <h3 class="slidesheading">Formiddagskaffe</h3>
+              <p class="slidestext">
+                Friskbagt brød eller knækbrød, pålæg, frugt/gulerod, samt vand,
+                kaffe og te.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <h3 class="slidesheading">Middag</h3>
+              <p class="slidestext">
+                Varm hovedret, som serveres på buffet. Mindst 1 gang om ugen
+                serveres der fisk – vegetarretter 1-2 gange om måneden. Til
+                hvert måltid serveres der salat/råkost/grøntsager og nogle gange
+                hjemmebagt brød. Til maden drikkes der koldt vand.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <h3 class="slidesheading">Eftermiddag</h3>
+              <p class="slidestext">
+                En variation af brød, frugt, grønt eller andet. Der vil være
+                adgang til kaffe, te og frisk koldt vand. Fredag er der kage.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <h3 class="slidesheading">Aftensmaden</h3>
+              <p class="slidestext">
+                Kold buffet med lun ret. Hver dag er der 5-6 forskellige slags
+                pålæg med dertilhørende rugbrød og dagens lune/kolde ret. De
+                fleste dage vil der være mulighed for salat eller råkost. Vi
+                serverer fiskepålæg 3-4 gange om ugen. Der drikkes vand til
+                maden.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <h3 class="slidesheading">Aftenkaffe</h3>
+              <p class="slidestext">
+                Franskbrød eller grovboller med marmelade og smør samt kaffe/te,
+                ved diverse arrangementer serveres der kage eller andet godt.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <h3 class="slidesheading">Weekend</h3>
+              <p class="slidestext">
+                I weekenderne er alting lidt anderledes. Morgenmaden serveres
+                kl. 9.30 og der kan forekommejuice, rundstykker, blødkogte æg,
+                pålægschokolade m.m. Til aften spises der varmt mad, der er
+                dessert lørdag aften og kage søndag eftermiddag.
+              </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
         </section>
         <section>
           <h2 id="koekkenet">Køkkenet</h2>
