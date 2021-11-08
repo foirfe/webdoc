@@ -1,25 +1,41 @@
+//Her finder javascript filen de forskellige elementer fra htmlen
 const meatfree = document.getElementById("meatfree");
 const kodfri = document.getElementById("kodfri");
 const allergies = document.getElementById("allergies");
-const allergier = document.getElementById("allergier")
-const religion = document.getElementById("religion")
-const religionoutput = document.getElementById("religionoutput")
+const allergier = document.getElementById("allergier");
+const religion = document.getElementById("religion");
+const religionoutput = document.getElementById("religionoutput");
+const storkniv = document.getElementById("storkniv");
+const mainheading = document.getElementById("mainheading");
 
+//Her skifter det specialkost div alt efter hvilken knap der bliver trykket på.
 meatfree.addEventListener("click", function(){
-    if (kodfri.style.display === "none" && allergier.style.display === "block" || religionoutput.style.display === "block") {
-meatfree.classList.add("specialkostmarked")
+    if (kodfri.style.display === "none") {
+    meatfree.classList.add("specialkostmarked");
         kodfri.style.display = "block";
-      } 
-}) 
+        allergier.style.display = "none";
+        religionoutput.style.display = "none";
+        allergies.classList.remove("specialkostmarked");
+        religion.classList.remove("specialkostmarked");
+      }
+    })
 
 allergies.addEventListener("click", function(){
-    if (allergier.style.display === "none" && kodfri.style.display === "block" || religionoutput.style.display === "block") {
-allergies.classList.add("specialkostmarked")
         allergier.style.display = "block";
         kodfri.style.display = "none";
-        religionoutput.style.display === "none"
-      } 
-}) 
+        religionoutput.style.display = "none";
+        allergies.classList.add("specialkostmarked");
+        meatfree.classList.remove("specialkostmarked");
+        religion.classList.remove("specialkostmarked")
+})
+religion.addEventListener("click", function(){
+    religionoutput.style.display = "block";
+    kodfri.style.display = "none";
+    allergier.style.display = "none";
+    allergies.classList.remove("specialkostmarked");
+    religion.classList.add("specialkostmarked");
+    meatfree.classList.remove("specialkostmarked");
+})
 
 
 
