@@ -105,6 +105,7 @@ section {
 
 body {
   line-height: 1;
+  width: 100%;
 }
 
 ol,
@@ -130,7 +131,29 @@ table {
   border-spacing: 0;
 }
 
-/* End of Eric Meyer's CSS Reset */
+.fade-in {
+  -webkit-animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 header {
   background-color: #322555;
   color: white;
@@ -172,8 +195,9 @@ header li {
 }
 
 #page__index .storkniv {
-  width: 25%;
-  left: 50%;
+  position: fixed;
+  width: 30%;
+  left: 0;
   margin-left: 40%;
 }
 
@@ -289,6 +313,18 @@ header li {
 #page__index #specialkostlist > li:not(:last-child)::after {
   content: " | ";
   margin: 0.1em;
+}
+
+#page__index #kodfri {
+  display: block;
+}
+
+#page__index #kodfri h2 {
+  margin: 2% 0 3% 0;
+}
+
+#page__index #kodfri p {
+  margin-bottom: 2%;
 }
 
 #page__index #allergier {

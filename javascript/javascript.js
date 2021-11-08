@@ -8,6 +8,18 @@ const religionoutput = document.getElementById("religionoutput");
 const storkniv = document.getElementById("storkniv");
 const mainheading = document.getElementById("mainheading");
 
+//Loader til siden
+var nowLoading;
+
+function myLoader() {
+  nowLoading = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("insidebody").style.display = "block";
+}
+
 //Her skifter det specialkost div alt efter hvilken knap der bliver trykket på.
 meatfree.addEventListener("click", function(){
     if (kodfri.style.display === "none") {
@@ -36,7 +48,6 @@ religion.addEventListener("click", function(){
     religion.classList.add("specialkostmarked");
     meatfree.classList.remove("specialkostmarked");
 })
-
 
 
 //Slideshow functionen, med hjælp fra W3Schools

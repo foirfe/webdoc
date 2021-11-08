@@ -19,284 +19,284 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Køkkenet</title>
   </head>
-  <body class="kniv">
-    <header>
-      <a href="https://klank-efterskole.dk/"
-        ><img src="images/klanklogo.png" alt="Klank Efterskole"
-      /></a>
-      <nav>
-        <ul>
-          <li>Fag</li>
-          <li>Om Skolen</li>
-          <li>Kontakt Os</li>
-          <li>Tilmelding</li>
-          <li><i class="fab fa-facebook-square"></i></li>
-          <li><i class="fab fa-instagram"></i></li>
-          <li><i class="fab fa-youtube"></i></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="page__index">
-      <img
-        src="images/knifebig.png"
-        alt="Tegnet Kniv"
-        class="storkniv"
-        id="storkniv"
-      />
-      <img src="images/tomato.png" alt="Tegnet Tomat" class="tomaten" />
-      <nav id="sidebar">
-        <ul>
-          <li><a href="index.html#vaerdier">Værdier</a></li>
-          <li class="vl"></li>
-          <li><a href="index.html#kostraad">Kostråd</a></li>
-          <li class="vl"></li>
-          <li><a href="index.html#specialkost">Specialkost</a></li>
-          <li class="vl"></li>
-          <li><a href="index.html#maaltider">Måltider</a></li>
-          <li class="vl"></li>
-          <li><a href="index.html#koekkenet">Køkkenet</a></li>
-        </ul>
-      </nav>
-      <article>
-        <h1 id="mainheading">Køkken På Klank</h1>
-        <section>
-          <h2 id="vaerdier">Værdier</h2>
-
-          <h3>
-            De værdier vi vægter her i køkkenet på Klank drejer sig primært omkring vores
-            kostpolitik. Formålet med vores kostpolitik er:
-          </h3>
+  <body class="kniv" id="wholebody" onload="myLoader()">
+    <div id="loader">
+      <img src="images/loadinggif.gif" style="display: block" />
+    </div>
+    <div id="insidebody" style="display: none" class="fade-in">
+      <header>
+        <a href="https://klank-efterskole.dk/"
+          ><img src="images/klanklogo.png" alt="Klank Efterskole"
+        /></a>
+        <nav>
           <ul>
-            <li>
-              At maden er sund, veltilberedt og ernæringsrigtig ud fra gældende
-              anbefalinger og kostråd.
-            </li>
-            <li>
-              At lave mad, baseret på gode råvarer og at anvende så få
-              halvfabrikata som muligt i madlavningen.
-            </li>
-            <li>
-              At præge eleverne til nogle gode, alsidige kostvaner, som lever op
-              til de generelle kostråd.
-            </li>
+            <li>Fag</li>
+            <li>Om Skolen</li>
+            <li>Kontakt Os</li>
+            <li>Tilmelding</li>
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-youtube"></i></li>
           </ul>
+        </nav>
+      </header>
 
-          <p>
-            Vi går meget op i at vores maden skal være varieret, spændende, se
-            indbydende ud og skal afspejle årets gang. Vi prøver også at
-            introducere andre kulturel til eleverne, det gør vi ved at i løbet
-            af skoleåret, laver vi forskellige temaer, fx Thailandsk mad, græsk
-            uge og nordisk mad osv.
-          </p>
-          <p>
-            Det er meget vigtigt for os at eleverne får nogle gode kostvaner.
-            Derfor server vi så meget fuldkorn, som muligt. Vi tilbyder også
-            frugt og grønt til alle eleverne, og sørge for at det er økologisk.
-          </p>
-
-        </section>
-        <section id="kostraad">
-          <h2>Kostråd</h2>
-          <p>
-            De 10 kostråd er udgangspunkt for vores planlægning og madlavning.
-          </p>
-          <ul id="kostraadlist">
-            <li class="kostraadleft">
-              <div class="kostraadblock">
-                <span class="kostraadlefttext">Spis mindre mættet fedt</span
-                ><span class="kostraadnummer">1</span>
-              </div>
-            </li>
-            <li class="kostraadright">
-              <div class="kostraadblock">
-                <span class="kostraadnummer">2</span>
-                <span class="kostraadrighttext">Spis mindre sukker</span>
-              </div>
-            </li>
-            <li class="kostraadleft">
-              <div class="kostraadblock">
-                <span class="kostraadlefttext">
-                  Spis frugt og mange grøntsager</span
-                ><span class="kostraadnummer">3</span>
-              </div>
-            </li>
-            <li class="kostraadright">
-              <div class="kostraadblock">
-                <span class="kostraadrighttext">
-                  <span class="kostraadnummer">4</span>
-                  Spar varieret, ikke for meget og vær fysisk aktiv</span
-                >
-              </div>
-            </li>
-            <li class="kostraadleft">
-              <div class="kostraadblock">
-                <span class="kostraadlefttext">Spis mad med mindre salt</span>
-                <span class="kostraadnummer">5</span>
-              </div>
-            </li>
-            <li class="kostraadright">
-              <div class="kostraadblock">
-                <span class="kostraadnummer">6</span>
-                <span class="kostraadrighttext">Spis mere fisk</span>
-              </div>
-            </li>
-            <li class="kostraadleft">
-              <div class="kostraadblock">
-                <span class="kostraadlefttext">Vælg fuldkorn</span
-                ><span class="kostraadnummer">7</span>
-              </div>
-            </li>
-            <li class="kostraadright">
-              <div class="kostraadblock">
-                <span class="kostraadnummer">8</span>
-                <span class="kostraadrighttext"
-                  >Vælg magert kød og kødpålæg</span
-                >
-              </div>
-            </li>
-            <li class="kostraadleft">
-              <div class="kostraadblock">
-                <span class="kostraadlefttext">Vælg magre mejeriprodukter</span
-                ><span class="kostraadnummer">9</span>
-              </div>
-            </li>
-            <li class="kostraadright">
-              <div class="kostraadblock">
-                <span class="kostraadnummer">10</span>
-                <span class="kostraadrighttext">Drik Vand</span>
-              </div>
-            </li>
+      <main id="page__index">
+        <nav id="sidebar">
+          <ul>
+            <li><a href="index.html#vaerdier">Værdier</a></li>
+            <li class="vl"></li>
+            <li><a href="index.html#kostraad">Kostråd</a></li>
+            <li class="vl"></li>
+            <li><a href="index.html#specialkost">Specialkost</a></li>
+            <li class="vl"></li>
+            <li><a href="index.html#maaltider">Måltider</a></li>
+            <li class="vl"></li>
+            <li><a href="index.html#koekkenet">Køkkenet</a></li>
           </ul>
-        </section>
-        <section id="specialkost">
-          <h2>Specialkost</h2>
-          Vi tilbyder at lave specialkost hvis dette er aktuelt for nogle af
-          skolens elever.
-          <ul id="specialkostlist">
-            <li id="meatfree" class="specialkostmarked">Kødfri</li>
-            <li id="allergies">Allergier</li>
-            <li id="religion">Religion</li>
-          </ul>
+        </nav>
+        <article>
+          <h1 id="mainheading">Køkken På Klank</h1>
+          <section>
+            <h2 id="vaerdier">Værdier</h2>
 
-          <p>
-            På Klank Efterskole tilbyder vi at lave specialkost, hvis dette
-            skulle være nødvendigt for nogle af skolens elever. Her hos os er
-            det vigtigt, at der er plads til alle.
-          </p>
-          <div id="kodfri">
-            <h2>Vegetarmad</h2>
-            <p>
-              Vi tilbyder at lave vegetarmad til de af eleverne, der inden
-              skoleårets start har meldt ud, at de er vegetarer. Dette tilbud
-              kan ikke vælges til i løbet af skoleårets forløb.
-            </p>
-          </div>
-          <div id="allergier">
-            <h2>Diætmad</h2>
-            <p>
-              Dette laves hvis der foreligger en aftale mellem skole og hjem.
-              Det skal være lægeligt begrundet.
-            </p>
-          </div>
-          <div id="religionoutput">
-            <h2>Troende muslimer</h2>
-            <p>
-              Vi tilbyder et specielt tilbud til dem, der ikke ønsker at spise
-              svinekød.
-            </p>
-          </div>
-          <p>
-            I starten af hvert skoleår udarbejder køkkenlederen, i samarbejde
-            med eleven og hjemmet, et papir på diætens/specialkostens indhold og
-            omfang.
-          </p>
+            <h3>
+              De værdier vi vægter her i køkkenet på Klank drejer sig primært
+              omkring vores kostpolitik. Formålet med vores kostpolitik er:
+            </h3>
+            <ul>
+              <li>
+                At maden er sund, veltilberedt og ernæringsrigtig ud fra
+                gældende anbefalinger og kostråd.
+              </li>
+              <li>
+                At lave mad, baseret på gode råvarer og at anvende så få
+                halvfabrikata som muligt i madlavningen.
+              </li>
+              <li>
+                At præge eleverne til nogle gode, alsidige kostvaner, som lever
+                op til de generelle kostråd.
+              </li>
+            </ul>
 
-        </section>
-        <section>
-          <h2 id="maaltider">Måltider</h2>
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <h3 class="slidesheading">Morgenmad</h3>
-              <p class="slidestext">
-                Lunt hjemmebagt brød med smør/Becel, oste, marmelader. Der
-                tilbydes økologiske surmælksprodukter, hjemmelavet mysli,
-                havregryn, havrefras, cornflakes, økologisk mini- og
-                skummetmælk, frisk udskåret frugt. Som variation laver vi nogle
-                gange øllebrød og havregrød. Hver morgen stilles der kaffe og te
-                frem til eleverne.
+            <p>
+              Vi går meget op i at vores maden skal være varieret, spændende, se
+              indbydende ud og skal afspejle årets gang. Vi prøver også at
+              introducere andre kulturel til eleverne, det gør vi ved at i løbet
+              af skoleåret, laver vi forskellige temaer, fx Thailandsk mad,
+              græsk uge og nordisk mad osv.
+            </p>
+            <p>
+              Det er meget vigtigt for os at eleverne får nogle gode kostvaner.
+              Derfor server vi så meget fuldkorn, som muligt. Vi tilbyder også
+              frugt og grønt til alle eleverne, og sørge for at det er
+              økologisk.
+            </p>
+          </section>
+          <section id="kostraad">
+            <h2>Kostråd</h2>
+            <p>
+              De 10 kostråd er udgangspunkt for vores planlægning og madlavning.
+            </p>
+            <ul id="kostraadlist">
+              <li class="kostraadleft">
+                <div class="kostraadblock">
+                  <span class="kostraadlefttext">Spis mindre mættet fedt</span
+                  ><span class="kostraadnummer">1</span>
+                </div>
+              </li>
+              <li class="kostraadright">
+                <div class="kostraadblock">
+                  <span class="kostraadnummer">2</span>
+                  <span class="kostraadrighttext">Spis mindre sukker</span>
+                </div>
+              </li>
+              <li class="kostraadleft">
+                <div class="kostraadblock">
+                  <span class="kostraadlefttext">
+                    Spis frugt og mange grøntsager</span
+                  ><span class="kostraadnummer">3</span>
+                </div>
+              </li>
+              <li class="kostraadright">
+                <div class="kostraadblock">
+                  <span class="kostraadrighttext">
+                    <span class="kostraadnummer">4</span>
+                    Spar varieret, ikke for meget og vær fysisk aktiv</span
+                  >
+                </div>
+              </li>
+              <li class="kostraadleft">
+                <div class="kostraadblock">
+                  <span class="kostraadlefttext">Spis mad med mindre salt</span>
+                  <span class="kostraadnummer">5</span>
+                </div>
+              </li>
+              <li class="kostraadright">
+                <div class="kostraadblock">
+                  <span class="kostraadnummer">6</span>
+                  <span class="kostraadrighttext">Spis mere fisk</span>
+                </div>
+              </li>
+              <li class="kostraadleft">
+                <div class="kostraadblock">
+                  <span class="kostraadlefttext">Vælg fuldkorn</span
+                  ><span class="kostraadnummer">7</span>
+                </div>
+              </li>
+              <li class="kostraadright">
+                <div class="kostraadblock">
+                  <span class="kostraadnummer">8</span>
+                  <span class="kostraadrighttext"
+                    >Vælg magert kød og kødpålæg</span
+                  >
+                </div>
+              </li>
+              <li class="kostraadleft">
+                <div class="kostraadblock">
+                  <span class="kostraadlefttext"
+                    >Vælg magre mejeriprodukter</span
+                  ><span class="kostraadnummer">9</span>
+                </div>
+              </li>
+              <li class="kostraadright">
+                <div class="kostraadblock">
+                  <span class="kostraadnummer">10</span>
+                  <span class="kostraadrighttext">Drik Vand</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section id="specialkost">
+            <h2>Specialkost</h2>
+            Vi tilbyder at lave specialkost hvis dette er aktuelt for nogle af
+            skolens elever.
+            <ul id="specialkostlist">
+              <li id="meatfree" class="specialkostmarked">Kødfri</li>
+              <li id="allergies">Allergier</li>
+              <li id="religion">Religion</li>
+            </ul>
+
+            <p>
+              På Klank Efterskole tilbyder vi at lave specialkost, hvis dette
+              skulle være nødvendigt for nogle af skolens elever. Her hos os er
+              det vigtigt, at der er plads til alle.
+            </p>
+            <div id="kodfri">
+              <h2>Vegetarmad</h2>
+              <p>
+                Vi tilbyder at lave vegetarmad til de af eleverne, der inden
+                skoleårets start har meldt ud, at de er vegetarer. Dette tilbud
+                kan ikke vælges til i løbet af skoleårets forløb.
               </p>
             </div>
-            <div class="mySlides fade">
-              <h3 class="slidesheading">Formiddagskaffe</h3>
-              <p class="slidestext">
-                Friskbagt brød eller knækbrød, pålæg, frugt/gulerod, samt vand,
-                kaffe og te.
+            <div id="allergier">
+              <h2>Diætmad</h2>
+              <p>
+                Dette laves hvis der foreligger en aftale mellem skole og hjem.
+                Det skal være lægeligt begrundet.
               </p>
             </div>
-            <div class="mySlides fade">
-              <h3 class="slidesheading">Middag</h3>
-              <p class="slidestext">
-                Varm hovedret, som serveres på buffet. Mindst 1 gang om ugen
-                serveres der fisk – vegetarretter 1-2 gange om måneden. Til
-                hvert måltid serveres der salat/råkost/grøntsager og nogle gange
-                hjemmebagt brød. Til maden drikkes der koldt vand.
+            <div id="religionoutput">
+              <h2>Troende muslimer</h2>
+              <p>
+                Vi tilbyder et specielt tilbud til dem, der ikke ønsker at spise
+                svinekød.
               </p>
             </div>
-            <div class="mySlides fade">
-              <h3 class="slidesheading">Eftermiddag</h3>
-              <p class="slidestext">
-                En variation af brød, frugt, grønt eller andet. Der vil være
-                adgang til kaffe, te og frisk koldt vand. Fredag er der kage.
-              </p>
+            <p>
+              I starten af hvert skoleår udarbejder køkkenlederen, i samarbejde
+              med eleven og hjemmet, et papir på diætens/specialkostens indhold
+              og omfang.
+            </p>
+          </section>
+          <section>
+            <h2 id="maaltider">Måltider</h2>
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <h3 class="slidesheading">Morgenmad</h3>
+                <p class="slidestext">
+                  Lunt hjemmebagt brød med smør/Becel, oste, marmelader. Der
+                  tilbydes økologiske surmælksprodukter, hjemmelavet mysli,
+                  havregryn, havrefras, cornflakes, økologisk mini- og
+                  skummetmælk, frisk udskåret frugt. Som variation laver vi
+                  nogle gange øllebrød og havregrød. Hver morgen stilles der
+                  kaffe og te frem til eleverne.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <h3 class="slidesheading">Formiddagskaffe</h3>
+                <p class="slidestext">
+                  Friskbagt brød eller knækbrød, pålæg, frugt/gulerod, samt
+                  vand, kaffe og te.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <h3 class="slidesheading">Middag</h3>
+                <p class="slidestext">
+                  Varm hovedret, som serveres på buffet. Mindst 1 gang om ugen
+                  serveres der fisk – vegetarretter 1-2 gange om måneden. Til
+                  hvert måltid serveres der salat/råkost/grøntsager og nogle
+                  gange hjemmebagt brød. Til maden drikkes der koldt vand.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <h3 class="slidesheading">Eftermiddag</h3>
+                <p class="slidestext">
+                  En variation af brød, frugt, grønt eller andet. Der vil være
+                  adgang til kaffe, te og frisk koldt vand. Fredag er der kage.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <h3 class="slidesheading">Aftensmaden</h3>
+                <p class="slidestext">
+                  Kold buffet med lun ret. Hver dag er der 5-6 forskellige slags
+                  pålæg med dertilhørende rugbrød og dagens lune/kolde ret. De
+                  fleste dage vil der være mulighed for salat eller råkost. Vi
+                  serverer fiskepålæg 3-4 gange om ugen. Der drikkes vand til
+                  maden.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <h3 class="slidesheading">Aftenkaffe</h3>
+                <p class="slidestext">
+                  Franskbrød eller grovboller med marmelade og smør samt
+                  kaffe/te, ved diverse arrangementer serveres der kage eller
+                  andet godt.
+                </p>
+              </div>
+              <div class="mySlides fade">
+                <h3 class="slidesheading">Weekend</h3>
+                <p class="slidestext">
+                  I weekenderne er alting lidt anderledes. Morgenmaden serveres
+                  kl. 9.30 og der kan forekommejuice, rundstykker, blødkogte æg,
+                  pålægschokolade m.m. Til aften spises der varmt mad, der er
+                  dessert lørdag aften og kage søndag eftermiddag.
+                </p>
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <div class="mySlides fade">
-              <h3 class="slidesheading">Aftensmaden</h3>
-              <p class="slidestext">
-                Kold buffet med lun ret. Hver dag er der 5-6 forskellige slags
-                pålæg med dertilhørende rugbrød og dagens lune/kolde ret. De
-                fleste dage vil der være mulighed for salat eller råkost. Vi
-                serverer fiskepålæg 3-4 gange om ugen. Der drikkes vand til
-                maden.
-              </p>
-            </div>
-            <div class="mySlides fade">
-              <h3 class="slidesheading">Aftenkaffe</h3>
-              <p class="slidestext">
-                Franskbrød eller grovboller med marmelade og smør samt kaffe/te,
-                ved diverse arrangementer serveres der kage eller andet godt.
-              </p>
-            </div>
-            <div class="mySlides fade">
-              <h3 class="slidesheading">Weekend</h3>
-              <p class="slidestext">
-                I weekenderne er alting lidt anderledes. Morgenmaden serveres
-                kl. 9.30 og der kan forekommejuice, rundstykker, blødkogte æg,
-                pålægschokolade m.m. Til aften spises der varmt mad, der er
-                dessert lørdag aften og kage søndag eftermiddag.
-              </p>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-        </section>
-        <section>
-          <h2 id="koekkenet">Køkkenet</h2>
-          <p>
-            Køkkenet på Klank Efterskole er et roligt og hyggeligt sted, hvor
-            der er plads til sjov, gode samtaler og teamwork. I køkkenet
-            befinder sig de faste køkkenmedarbejdere, men også elever på daglig
-            basis. Dårlige stunder er der få af, og både elever og personale
-            nyder godt af den tid, der bliver brugt i køkkenet. Det primære
-            fokus ligger på tilberedning af mad, men samarbejde og hygge er også
-            nogle af de ting, der ligger øverst på listen. I køkkenet lægges der
-            også fokus på, at eleverne får noget erfaring med madlavning, så de
-            i fremtiden kan lave mad selvstændigt, til når de står på egne ben.
-          </p>
-        </section>
-      </article>
-    </main>
-    <footer></footer>
-    <script src="javascript/javascript.js"></script>
+          </section>
+          <section>
+            <h2 id="koekkenet">Køkkenet</h2>
+            <p>
+              Køkkenet på Klank Efterskole er et roligt og hyggeligt sted, hvor
+              der er plads til sjov, gode samtaler og teamwork. I køkkenet
+              befinder sig de faste køkkenmedarbejdere, men også elever på
+              daglig basis. Dårlige stunder er der få af, og både elever og
+              personale nyder godt af den tid, der bliver brugt i køkkenet. Det
+              primære fokus ligger på tilberedning af mad, men samarbejde og
+              hygge er også nogle af de ting, der ligger øverst på listen. I
+              køkkenet lægges der også fokus på, at eleverne får noget erfaring
+              med madlavning, så de i fremtiden kan lave mad selvstændigt, til
+              når de står på egne ben.
+            </p>
+          </section>
+        </article>
+      </main>
+      <footer></footer>
+      <script src="javascript/javascript.js"></script>
+    </div>
   </body>
 </html>

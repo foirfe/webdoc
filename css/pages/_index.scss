@@ -2,9 +2,11 @@
   background: url("../images/grainybackground.jpg");
   background-size: auto;
   background-repeat: repeat;
+
   .storkniv {
-    width: 25%;
-    left: 50%;
+    position: fixed;
+    width: 30%;
+    left: 0;
     margin-left: 40%;
   }
   .tomaten {
@@ -92,7 +94,15 @@
     content: " | ";
     margin: 0.1em;
   }
-
+  #kodfri {
+    display: block;
+    h2 {
+      margin: 2% 0 3% 0;
+    }
+    p {
+      margin-bottom: 2%;
+    }
+  }
   #allergier {
     display: none;
   }
