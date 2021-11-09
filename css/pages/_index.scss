@@ -2,7 +2,11 @@
   background: url("../images/grainybackground.jpg");
   background-size: auto;
   background-repeat: repeat;
+  color: white;
 
+  #mainpagevideo {
+    width: 100%;
+  }
   .storkniv {
     position: fixed;
     width: 30%;
@@ -27,7 +31,7 @@
       font-weight: bold;
       a {
         text-decoration: none;
-        color: black;
+        color: white;
       }
     }
   }
@@ -36,6 +40,41 @@
     height: 50px;
     margin-left: 50%;
     top: 0;
+  }
+  section {
+    display: block;
+    height: 100vh;
+  }
+  #firstsection {
+    background: url("../images/background1.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+  #kostraad {
+    background: url("../images/background2.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+  #specialkost {
+    background: url("../images/background3.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+
+  #maaltider {
+    background: url("../images/background4.png");
+    background-size: auto;
+    background-repeat: repeat;
+  }
+
+  #koekkenet {
+    background: url("../images/background5.png");
+    background-size: auto;
+    background-repeat: repeat;
+    #koekkenvideo {
+      width: 80%;
+      margin: 0 10% 0 10%;
+    }
   }
   h1 {
     font-family: "Montserrat", sans-serif;
@@ -48,8 +87,10 @@
     font-size: 2em;
   }
   article {
-    width: 75%;
-    margin: 0 12.5% 0 12.5%;
+    width: 100%;
+  }
+  section {
+    padding-left: 10%;
   }
   #kostraadlist {
     display: flex;

@@ -131,6 +131,11 @@ table {
   border-spacing: 0;
 }
 
+#loader img {
+  width: 100%;
+  height: auto;
+}
+
 .fade-in {
   -webkit-animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -152,6 +157,10 @@ table {
   100% {
     opacity: 1;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -192,6 +201,11 @@ header li {
   background: url("../images/grainybackground.jpg");
   background-size: auto;
   background-repeat: repeat;
+  color: white;
+}
+
+#page__index #mainpagevideo {
+  width: 100%;
 }
 
 #page__index .storkniv {
@@ -224,7 +238,7 @@ header li {
 
 #page__index #sidebar ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 #page__index .vl {
@@ -232,6 +246,46 @@ header li {
   height: 50px;
   margin-left: 50%;
   top: 0;
+}
+
+#page__index section {
+  display: block;
+  height: 100vh;
+}
+
+#page__index #firstsection {
+  background: url("../images/background1.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+#page__index #kostraad {
+  background: url("../images/background2.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+#page__index #specialkost {
+  background: url("../images/background3.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+#page__index #maaltider {
+  background: url("../images/background4.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+#page__index #koekkenet {
+  background: url("../images/background5.png");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+#page__index #koekkenet #koekkenvideo {
+  width: 80%;
+  margin: 0 10% 0 10%;
 }
 
 #page__index h1 {
@@ -247,8 +301,11 @@ header li {
 }
 
 #page__index article {
-  width: 75%;
-  margin: 0 12.5% 0 12.5%;
+  width: 100%;
+}
+
+#page__index section {
+  padding-left: 10%;
 }
 
 #page__index #kostraadlist {

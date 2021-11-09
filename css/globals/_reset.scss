@@ -130,6 +130,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+#loader img {
+  width: 100%;
+  height: auto;
+}
 .fade-in {
   -webkit-animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -149,4 +153,7 @@ table {
   100% {
     opacity: 1;
   }
+}
+html {
+  scroll-behavior: smooth;
 }

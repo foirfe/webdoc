@@ -21,7 +21,7 @@
   </head>
   <body class="kniv" id="wholebody" onload="myLoader()">
     <div id="loader">
-      <img src="images/loadinggif.gif" style="display: block" />
+      <img src="images/loading.gif" style="display: block" />
     </div>
     <div id="insidebody" style="display: none" class="fade-in">
       <header>
@@ -42,6 +42,9 @@
       </header>
 
       <main id="page__index">
+        <video autoplay loop muted id="mainpagevideo">
+          <source src="images/mainpagevideo.mp4" type="video/mp4" />
+        </video>
         <nav id="sidebar">
           <ul>
             <li><a href="index.html#vaerdier">Værdier</a></li>
@@ -56,43 +59,46 @@
           </ul>
         </nav>
         <article>
-          <h1 id="mainheading">Køkken På Klank</h1>
-          <section>
-            <h2 id="vaerdier">Værdier</h2>
+          <div id="firstsection">
+            <section id="vaerdier">
+              <h1 id="mainheading">Køkken På Klank</h1>
 
-            <h3>
-              De værdier vi vægter her i køkkenet på Klank drejer sig primært
-              omkring vores kostpolitik. Formålet med vores kostpolitik er:
-            </h3>
-            <ul>
-              <li>
-                At maden er sund, veltilberedt og ernæringsrigtig ud fra
-                gældende anbefalinger og kostråd.
-              </li>
-              <li>
-                At lave mad, baseret på gode råvarer og at anvende så få
-                halvfabrikata som muligt i madlavningen.
-              </li>
-              <li>
-                At præge eleverne til nogle gode, alsidige kostvaner, som lever
-                op til de generelle kostråd.
-              </li>
-            </ul>
+              <h2>Værdier</h2>
 
-            <p>
-              Vi går meget op i at vores maden skal være varieret, spændende, se
-              indbydende ud og skal afspejle årets gang. Vi prøver også at
-              introducere andre kulturel til eleverne, det gør vi ved at i løbet
-              af skoleåret, laver vi forskellige temaer, fx Thailandsk mad,
-              græsk uge og nordisk mad osv.
-            </p>
-            <p>
-              Det er meget vigtigt for os at eleverne får nogle gode kostvaner.
-              Derfor server vi så meget fuldkorn, som muligt. Vi tilbyder også
-              frugt og grønt til alle eleverne, og sørge for at det er
-              økologisk.
-            </p>
-          </section>
+              <h3>
+                De værdier vi vægter her i køkkenet på Klank drejer sig primært
+                omkring vores kostpolitik. Formålet med vores kostpolitik er:
+              </h3>
+              <ul>
+                <li>
+                  At maden er sund, veltilberedt og ernæringsrigtig ud fra
+                  gældende anbefalinger og kostråd.
+                </li>
+                <li>
+                  At lave mad, baseret på gode råvarer og at anvende så få
+                  halvfabrikata som muligt i madlavningen.
+                </li>
+                <li>
+                  At præge eleverne til nogle gode, alsidige kostvaner, som
+                  lever op til de generelle kostråd.
+                </li>
+              </ul>
+
+              <p>
+                Vi går meget op i at vores maden skal være varieret, spændende,
+                se indbydende ud og skal afspejle årets gang. Vi prøver også at
+                introducere andre kulturel til eleverne, det gør vi ved at i
+                løbet af skoleåret, laver vi forskellige temaer, fx Thailandsk
+                mad, græsk uge og nordisk mad osv.
+              </p>
+              <p>
+                Det er meget vigtigt for os at eleverne får nogle gode
+                kostvaner. Derfor server vi så meget fuldkorn, som muligt. Vi
+                tilbyder også frugt og grønt til alle eleverne, og sørge for at
+                det er økologisk.
+              </p>
+            </section>
+          </div>
           <section id="kostraad">
             <h2>Kostråd</h2>
             <p>
@@ -210,8 +216,8 @@
               og omfang.
             </p>
           </section>
-          <section>
-            <h2 id="maaltider">Måltider</h2>
+          <section id="maaltider">
+            <h2>Måltider</h2>
             <div class="slideshow-container">
               <div class="mySlides fade">
                 <h3 class="slidesheading">Morgenmad</h3>
@@ -278,8 +284,8 @@
               <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
           </section>
-          <section>
-            <h2 id="koekkenet">Køkkenet</h2>
+          <section id="koekkenet">
+            <h2>Køkkenet</h2>
             <p>
               Køkkenet på Klank Efterskole er et roligt og hyggeligt sted, hvor
               der er plads til sjov, gode samtaler og teamwork. I køkkenet
@@ -292,10 +298,15 @@
               med madlavning, så de i fremtiden kan lave mad selvstændigt, til
               når de står på egne ben.
             </p>
+
+            <video loop autoplay muted id="koekkenvideo">
+              <source src="images/kitchen.mp4" type="video/mp4" />
+            </video>
           </section>
         </article>
       </main>
       <footer></footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="javascript/javascript.js"></script>
     </div>
   </body>
