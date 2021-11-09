@@ -21,7 +21,11 @@
   </head>
   <body class="kniv" id="wholebody" onload="myLoader()">
     <div id="loader">
-      <img src="images/loading.gif" style="display: block" />
+      <img
+        src="images/loading.gif"
+        style="display: block"
+        alt="The Page is Loading"
+      />
     </div>
     <div id="insidebody" style="display: none" class="fade-in">
       <header>
@@ -60,9 +64,8 @@
         </nav>
         <article>
           <div id="firstsection">
+            <h1 id="mainheading">Køkken På Klank</h1>
             <section id="vaerdier">
-              <h1 id="mainheading">Køkken På Klank</h1>
-
               <h2>Værdier</h2>
 
               <h3>
@@ -299,7 +302,7 @@
               når de står på egne ben.
             </p>
 
-            <video loop autoplay muted id="koekkenvideo">
+            <video loop autoplay controls muted id="koekkenvideo">
               <source src="images/kitchen.mp4" type="video/mp4" />
             </video>
           </section>

@@ -106,6 +106,16 @@ section {
 body {
   line-height: 1;
   width: 100%;
+  a {
+    &:hover {
+      cursor: url("../images/pointer.png"), auto;
+    }
+  }
+}
+video::-webkit-media-controls-panel {
+  &:hover {
+    cursor: url("..images/pointer.png"), auto;
+  }
 }
 
 ol,
