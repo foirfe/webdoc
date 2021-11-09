@@ -106,3 +106,33 @@ function showSlides(n) {
 })();
 
 
+const allItems = document.querySelectorAll(".sidebar ul li a");
+
+allItems.forEach(item => {
+    item.addEventListener( "click", function(e){
+
+for(var i=0; i < allItems.length; i ++) {
+    allItems[i].classList.remove("active");
+}
+        this.classList.add("active");
+    });
+});
+
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".sidebar ul li a");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (scrollY >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((a) => {
+    a.classList.remove("active");
+    if (a.classList.contains(current)) {
+      a.classList.add("active");
+    }
+  });
+};
