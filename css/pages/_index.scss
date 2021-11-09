@@ -25,16 +25,55 @@
     font-family: "Montserrat", sans-serif;
     height: 100%;
     width: 10%;
-    ul li {
-      font-size: 1.5em;
-      margin-bottom: 3%;
-      font-weight: bold;
-      a {
-        text-decoration: none;
-        color: white;
+    ul {
+      padding-left: 50px;
+      position: relative;
+      text-align: left;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: calc(100% - 58px);
+        top: 0;
+        background: crimson;
+        z-index: -5;
+        margin-top: 29px;
+      }
+      li {
+        padding: 30px 0;
+        padding-left: 26px;
+        a {
+          text-decoration: none;
+          position: relative;
+          color: black;
+          font-size: 1.5rem;
+          line-height: 1rem;
+          font-weight: 500;
+
+          &::before {
+            content: "";
+            position: absolute;
+            background: white;
+            width: 18px;
+            height: 18px;
+            left: -37px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50px;
+            border: 4px solid crimson;
+            transition: background 250ms;
+          }
+          &.active {
+            font-weight: 700;
+          }
+          &.active::before {
+            background: crimson;
+          }
+        }
       }
     }
   }
+
   .vl {
     border-left: 5px solid #322555;
     height: 50px;
