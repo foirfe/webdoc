@@ -65,12 +65,26 @@
     background: url("../images/background4.png");
     background-size: auto;
     background-repeat: repeat;
+    h3 {
+      font-size: 2em;
+      margin-bottom: 2%;
+      text-decoration: underline;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  }
+  .maaltidbillede {
+    margin: 2% 20% 0 20%;
+    width: 60%;
   }
 
   #koekkenet {
     background: url("../images/background5.png");
     background-size: auto;
     background-repeat: repeat;
+    color: black;
+    font-family: "Montserrat", sans-serif;
     #koekkenvideo {
       width: 80%;
       margin: 0 10% 0 10%;
@@ -85,6 +99,8 @@
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 2em;
+    padding-top: 3%;
+    margin-bottom: 5%;
   }
   article {
     width: 100%;
@@ -127,6 +143,7 @@
         text-decoration: underline;
         &:hover {
           font-weight: bold;
+          cursor: url("../images/pointer.png"), auto;
         }
       }
     }
@@ -160,7 +177,7 @@
   }
   .prev,
   .next {
-    cursor: pointer;
+    cursor: url("../images/pointer.png"), auto;
     position: absolute;
     top: 50%;
     width: auto;
@@ -179,7 +196,7 @@
   }
   .prev:hover,
   .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
   }
   .fade {
     -webkit-animation-name: fade;
