@@ -378,7 +378,7 @@ header a {
 #page__index h2 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 2.1em;
+  font-size: 2.2em;
   padding-top: 3%;
   margin-bottom: 5%;
 }
@@ -395,25 +395,33 @@ header a {
 }
 
 #page__index #vaerdierheading {
-  padding-top: 5%;
-  margin-bottom: 1%;
+  margin-top: 15%;
+  margin-bottom: 0%;
 }
 
 #page__index #vaerdiertekst {
   text-align: center;
-  width: 40%;
-  margin-left: 50%;
+  width: 35%;
+  margin-left: 60%;
+  font-size: 1.2em;
+}
+
+#page__index #vaerdiertekst h3 {
+  margin-top: 4%;
 }
 
 #page__index #vaerdiertekst li {
   list-style: disc;
   text-align: left;
-  -ms-flex-line-pack: center;
-      align-content: center;
+}
+
+#page__index #vaerdiertekst ul {
+  margin-top: 4%;
+  margin-left: 7%;
 }
 
 #page__index #vaerdiertekst p {
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 #page__index article {
@@ -449,6 +457,12 @@ header a {
 #page__index .kostraadblock {
   border: 3px solid black;
   background-color: #dad0dd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #page__index .kostraadnummer {
