@@ -92,15 +92,41 @@
   }
   h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
   }
   h2 {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.1em;
     padding-top: 3%;
     margin-bottom: 5%;
+  }
+  #articleheading {
+    display: none;
+  }
+  #mainheading {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 3.5em;
+    margin-bottom: 0%;
+  }
+  #vaerdierheading {
+    padding-top: 5%;
+    margin-bottom: 1%;
+  }
+  #vaerdiertekst {
+    text-align: center;
+    width: 40%;
+    margin-left: 50%;
+    li {
+      list-style: disc;
+      text-align: left;
+      align-content: center;
+    }
+    p {
+      margin-top: 2%;
+    }
   }
   article {
     width: 100%;
