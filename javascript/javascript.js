@@ -137,3 +137,19 @@ window.onscroll = () => {
     }
   });
 };
+
+
+//Øje der følger en efter hvor musen er på den sektion
+var eyeball = document.getElementById("eyeball");
+const eyesection = document.getElementById("eyesection");
+const body = document.querySelector("body")
+
+body.onmousemove = function(event){
+    var x = event.clientX * 10 / window.innerWidth + "%";
+    var y = event.clientY * 10 / window.innerHeight + "%";
+
+for(var i=0;i<2;i++){
+    eyeball.style.left = x;
+    eyeball.style.top = y;
+}
+}
