@@ -137,7 +137,7 @@
   h2 {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 2.1em;
     padding-top: 3%;
     margin-bottom: 5%;
   }
@@ -151,27 +151,20 @@
     margin-bottom: 0%;
   }
   #vaerdierheading {
-    margin-top: 15%;
-    margin-bottom: 0%;
+    padding-top: 5%;
+    margin-bottom: 1%;
   }
   #vaerdiertekst {
     text-align: center;
-    width: 35%;
-    margin-left: 60%;
-    font-size: 1.2em;
-    h3 {
-      margin-top: 4%;
-    }
+    width: 40%;
+    margin-left: 50%;
     li {
       list-style: disc;
       text-align: left;
-    }
-    ul {
-      margin-top: 4%;
-      margin-left: 7%;
+      align-content: center;
     }
     p {
-      margin-top: 4%;
+      margin-top: 2%;
     }
   }
   article {
@@ -194,8 +187,6 @@
   .kostraadblock {
     border: 3px solid black;
     background-color: #dad0dd;
-    display: flex;
-    align-items: center;
   }
   .kostraadnummer {
     font-size: 2em;
