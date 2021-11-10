@@ -393,6 +393,30 @@ header a {
   margin-top: 4%;
 }
 
+#page__index #banan {
+  margin-top: 6.8%;
+}
+
+#page__index #fisk {
+  margin-top: 4.4%;
+}
+
+#page__index #the {
+  margin-top: 6.8%;
+}
+
+#page__index #rullepoelse {
+  margin-top: 4.4%;
+}
+
+#page__index #kaffe {
+  margin-top: 9.2%;
+}
+
+#page__index #aeg {
+  margin-top: 2%;
+}
+
 #page__index article {
   width: 100%;
   background: url("../images/grainybackground.jpg");
@@ -527,7 +551,7 @@ header a {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   -webkit-transition: 0.6s ease;
