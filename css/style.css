@@ -272,8 +272,7 @@ header a {
 }
 
 #page__index #sidebar ul li {
-  margin-left: 30%;
-  padding-left: 30%;
+  margin-left: 78%;
 }
 
 #page__index #sidebar ul li a {
@@ -291,8 +290,8 @@ header a {
   background: white;
   width: 18px;
   height: 18px;
-  left: -37px;
-  top: 50%;
+  left: 39%;
+  top: 150%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   border-radius: 50px;
