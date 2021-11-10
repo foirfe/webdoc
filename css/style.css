@@ -424,6 +424,11 @@ header a {
           justify-content: flex-start;
 }
 
+#page__index .kostraadlefttext {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 #page__index .kostraadblock {
   border: 3px solid black;
   background-color: #dad0dd;
@@ -435,7 +440,11 @@ header a {
           align-items: center;
 }
 
-#page__index .kostraadnummer {
+#page__index .kostraadnummerleft {
+  font-size: 2em;
+}
+
+#page__index .kostraadnummerright {
   font-size: 2em;
 }
 
@@ -446,6 +455,11 @@ header a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+#page__index .kostraadrighttext {
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #page__index #eyesection {

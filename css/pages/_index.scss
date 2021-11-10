@@ -165,18 +165,29 @@
     display: inline-flex;
     justify-content: flex-start;
   }
+  .kostraadlefttext {
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
   .kostraadblock {
     border: 3px solid black;
     background-color: #dad0dd;
     display: flex;
     align-items: center;
   }
-  .kostraadnummer {
+  .kostraadnummerleft {
+    font-size: 2em;
+  }
+  .kostraadnummerright {
     font-size: 2em;
   }
   .kostraadright {
     display: inline-flex;
     justify-content: flex-end;
+  }
+  .kostraadrighttext {
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
   #eyesection {
     background: #dad0dd;
