@@ -171,6 +171,68 @@ html {
   scroll-behavior: smooth;
 }
 
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-out-left {
+  -webkit-animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-out-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+}
+
 header {
   background-color: #322555;
   color: white;
@@ -310,7 +372,135 @@ header a {
 
 #page__index section {
   display: block;
-  height: 100vh;
+}
+
+#page__index #kostpolitik {
+  height: 4250vh;
+}
+
+#page__index #kostpolitik #kostpolitik1 {
+  position: fixed;
+  top: 30%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+  font-size: 3em;
+}
+
+#page__index #kostpolitik #kostpolitik2 {
+  position: fixed;
+  top: 70%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+  font-size: 2.5em;
+}
+
+#page__index #kostpolitik #kostpolitik3 {
+  position: fixed;
+  top: 80%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+  font-size: 1.2em;
+}
+
+#page__index #kostpolitik #kostpolitik4 {
+  position: fixed;
+  top: 50%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Azeret Mono", monospace;
+  font-size: 1.5em;
+}
+
+#page__index #kostpolitik #kostpolitik5 {
+  position: fixed;
+  top: 70%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+  font-size: 1.3em;
+}
+
+#page__index #kostpolitik #kostpolitik6 {
+  position: fixed;
+  top: 30%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+  font-size: 1.5em;
+}
+
+#page__index #kostpolitik #kostpolitik7 {
+  position: fixed;
+  top: 50%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+  font-size: 1.3em;
+}
+
+#page__index #kostpolitik #kostpolitik8 {
+  position: fixed;
+  top: 50%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.2em;
+}
+
+#page__index #kostpolitik #kostpolitik9 {
+  position: fixed;
+  top: 70%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.2em;
+}
+
+#page__index #kostpolitik #kostpolitik10 {
+  position: fixed;
+  top: 50%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.2em;
+}
+
+#page__index #kostpolitik #kostpolitik11 {
+  position: fixed;
+  top: 30%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Inconsolata", monospace;
+  font-size: 1.2em;
+}
+
+#page__index #kostpolitik #kostpolitik12 {
+  position: fixed;
+  top: 50%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+  font-size: 1.5em;
+}
+
+#page__index #kostpolitik #kostpolitik13 {
+  position: fixed;
+  top: 50%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+}
+
+#page__index #kostpolitik #kostpolitik14 {
+  position: fixed;
+  top: 80%;
+  left: -1200px;
+  white-space: nowrap;
+  font-family: "Zen Antique", serif;
+  font-size: 2em;
 }
 
 #page__index #maaltider h3 {
@@ -360,7 +550,7 @@ header a {
   padding-top: 3%;
   padding-bottom: 3%;
   font-size: 3.5em;
-  margin-bottom: 0%;
+  margin-top: 5%;
 }
 
 #page__index #vaerdierheading {
@@ -398,10 +588,6 @@ header a {
   background: url("../images/grainybackground.jpg");
 }
 
-#page__index section {
-  padding-left: 10%;
-}
-
 #page__index #kostraadlist {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,7 +598,7 @@ header a {
           flex-direction: column;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 4em;
 }
 
 #page__index .kostraadleft {
@@ -425,8 +611,8 @@ header a {
 }
 
 #page__index .kostraadblock {
-  border: 3px solid black;
-  background-color: #dad0dd;
+  margin-bottom: 5%;
+  background-color: #ffd000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

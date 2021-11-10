@@ -12,7 +12,7 @@ const mainheading = document.getElementById("mainheading");
 var nowLoading;
 
 function myLoader() {
-  nowLoading = setTimeout(showPage, 2500);
+  nowLoading = setTimeout(showPage, 2);//2300 normal
 }
 
 function showPage() {
@@ -121,4 +121,3 @@ for(var i=0;i<2;i++){
     eyeball.style.top = y;
 }
 }
-
