@@ -538,6 +538,10 @@ header a {
   font-size: 2em;
 }
 
+#page__index #maaltider {
+  height: 1650vh;
+}
+
 #page__index #maaltider h3 {
   font-size: 2em;
   margin-bottom: 2%;
@@ -740,30 +744,41 @@ header a {
   z-index: 3;
 }
 
-#page__index .specialkostmarked {
-  font-size: 1.2em;
-  font-weight: bold;
+#page__index #specialkost #specialkostflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#page__index #specialkost ul {
-  text-align: center;
-  font-size: 2em;
+#page__index #specialkost #specialkostflex img {
+  width: 40%;
 }
 
-#page__index #specialkost ul li {
-  display: inline;
+#page__index #specialkost #specialkostflex p {
   font-family: "Montserrat", sans-serif;
-  text-decoration: underline;
+  font-size: 1.5em;
 }
 
-#page__index #specialkost ul li:hover {
-  font-weight: bold;
-  cursor: url("../images/pointer.png"), auto;
+#page__index #specialkost #specialkostflex #knivogtext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 30%;
 }
 
-#page__index #specialkostlist > li:not(:last-child)::after {
-  content: " | ";
-  margin: 0.1em;
+#page__index #specialkost #specialkostflex #knivogtext img {
+  width: 100%;
+  margin-right: -30%;
 }
 
 #page__index #kodfri {
@@ -783,68 +798,59 @@ header a {
   display: none;
 }
 
-#page__index .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+#page__index .scroll1 {
+  position: fixed;
+  top: 30%;
+  left: -800px;
+  height: 800vh;
+  width: 1000px;
 }
 
-#page__index .mySlides {
-  display: none;
+#page__index .scroll2 {
+  position: fixed;
+  top: 30%;
+  left: -800px;
+  height: 800vh;
+  width: 1000px;
 }
 
-#page__index .prev,
-#page__index .next {
-  cursor: url("../images/pointer.png"), auto;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  -webkit-transition: 0.6s ease;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+#page__index .scroll3 {
+  position: fixed;
+  top: 30%;
+  left: -800px;
+  height: 800vh;
+  width: 1000px;
 }
 
-#page__index .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+#page__index .scroll4 {
+  position: fixed;
+  top: 30%;
+  left: -800px;
+  height: 800vh;
+  width: 1000px;
 }
 
-#page__index .prev:hover,
-#page__index .next:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+#page__index .scroll5 {
+  position: fixed;
+  top: 30%;
+  left: -800px;
+  height: 800vh;
+  width: 1000px;
 }
 
-#page__index .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+#page__index .scroll6 {
+  position: fixed;
+  top: 30%;
+  left: -800px;
+  height: 800vh;
+  width: 1000px;
 }
 
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+#page__index .scroll7 {
+  position: fixed;
+  top: 30%;
+  left: -800px;
+  height: 800vh;
+  width: 1000px;
 }
 /*# sourceMappingURL=style.css.map */

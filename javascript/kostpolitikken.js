@@ -13,6 +13,13 @@ let linje11 = document.querySelector("#kostpolitik11")
 let linje12 = document.querySelector("#kostpolitik12")
 let linje13 = document.querySelector("#kostpolitik13")
 let linje14 = document.querySelector("#kostpolitik14")
+let scroll1 = document.querySelector('.scroll1');
+let scroll2 = document.querySelector('.scroll2');
+let scroll3 = document.querySelector('.scroll3');
+let scroll4 = document.querySelector('.scroll4');
+let scroll5 = document.querySelector('.scroll5');
+let scroll6 = document.querySelector('.scroll6');
+let scroll7 = document.querySelector('.scroll7');
 
 window.onscroll = () => {
     let pos = window .scrollY - 1200;
@@ -29,6 +36,13 @@ window.onscroll = () => {
     let pos11 = window .scrollY - 34400;
     let pos12 = window .scrollY - 35600;
     let pos13 = window .scrollY - 38800;
+    let pos14 = window.scrollY - 53300;
+    let pos15 = window.scrollY -54800;
+    let pos16 = window.scrollY -56300;
+    let pos17 = window.scrollY -57800;
+    let pos18 = window.scrollY -59300;
+    let pos19 = window.scrollY -510800;
+    let pos20 = window.scrollY -512300;
     
 
     linje1.style.left =  `${pos}px`
@@ -45,4 +59,13 @@ window.onscroll = () => {
     linje12.style.left =  `${pos11}px`
     linje13.style.left =  `${pos12}px`
     linje14.style.right =  `${pos13}px`
+    scroll1.style.left = `${pos14}px`;
+  scroll2.style.left = `${pos15}px`;
+  scroll3.style.left = `${pos16}px`;
+  scroll4.style.left = `${pos17}px`;
+  scroll5.style.left = `${pos18}px`;
+  scroll6.style.left = `${pos19}px`;
+  scroll7.style.left = `${pos20}px`;
 }
+
+//her kan man scrolle i stedet for slideshow

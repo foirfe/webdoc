@@ -227,42 +227,53 @@
 
           <section id="specialkost">
             <h2>Specialkost</h2>
-            <img
-              src="images/forkpynt.png"
-              alt="Hvad mon der sker hvis du trykker på mig?"
-              id="gaffelcursor"
-            />
-            <p>
-              Køkken-Hanne... Eller skulle vi sige Ridder-Hanne? Ridder-Hanne er
-              en forkæmper for børn og unge der har brug for specialkost! Vi er
-              godt klar over, at nogle har omstændigheder i deres liv, der gør
-              de ikke ka' spise alt i hele Verden. Det tager vi selvfølgelig
-              hensyn til. Vi lægger stor vægt på, at specialkost ikke bare skal
-              være en slatten gulerod, men rent faktisk noget der er ligeså
-              lækkert som hvad alle andre spiser.
-            </p>
+            <div id="specialkostflex">
+              <img src="images/specialkost.png" alt="Køkken Hanne på Hest" />
+              <div id="knivogtext">
+                <img
+                  src="images/forkpynt.png"
+                  alt="Hvad mon der sker hvis du trykker på mig?"
+                  id="gaffelcursor"
+                />
+                <p>
+                  Køkken-Hanne... Eller skulle vi sige Ridder-Hanne?
+                  Ridder-Hanne er en forkæmper for børn og unge der har brug for
+                  specialkost! Vi er godt klar over, at nogle har omstændigheder
+                  i deres liv, der gør de ikke ka' spise alt i hele Verden. Det
+                  tager vi selvfølgelig hensyn til. Vi lægger stor vægt på, at
+                  specialkost ikke bare skal være en slatten gulerod, men rent
+                  faktisk noget der er ligeså lækkert som hvad alle andre
+                  spiser.
+                </p>
+              </div>
+            </div>
           </section>
           <section id="maaltider">
             <h2>Måltider</h2>
-            <div class="slideshow-container">
-              <div class="mySlides fade">
-                <h3 class="slidesheading">Morgenmad</h3>
-                <p class="slidestext">
-                  Flæk et franskbrød, glat et økologisk blandingsprodukt ud og
-                  drukken det så i en hindbærvariant fra den blå spand. Eller
-                  hvis du er helt skør med Skyr, så kan du da drysse et tørt
-                  morgenmadsprodukt udover. Vi har også magre mejeriprodukter i
-                  stride strømme, og frugt i lange baner. Nyd med en kop kaffe
-                  eller te. Hvis du er heldig kan du også hapse en skål øllebrød
-                  eller havregrød. Hvis du er heldig!
-                </p>
-                <img
-                  src="images/morgenmad.png"
-                  alt="Morgenbrød"
-                  class="maaltidbillede"
-                />
+            <div class="scroll1">
+              <div>
+                <div class="mySlides">
+                  <h3 class="slidesheading">Morgenmad</h3>
+                  <p class="slidestext">
+                    Flæk et franskbrød, glat et økologisk blandingsprodukt ud og
+                    drukken det så i en hindbærvariant fra den blå spand. Eller
+                    hvis du er helt skør med Skyr, så kan du da drysse et tørt
+                    morgenmadsprodukt udover. Vi har også magre mejeriprodukter
+                    i stride strømme, og frugt i lange baner. Nyd med en kop
+                    kaffe eller te. Hvis du er heldig kan du også hapse en skål
+                    øllebrød eller havregrød. Hvis du er heldig!
+                  </p>
+                  <img
+                    src="images/morgenmad.png"
+                    alt="Morgenbrød"
+                    class="maaltidbillede"
+                  />
+                </div>
               </div>
-              <div class="mySlides fade">
+            </div>
+
+            <div class="scroll2">
+              <div class="mySlides">
                 <h3 class="slidesheading">Formiddagskaffe</h3>
                 <p class="slidestext">
                   Franskbrød eller knægbrød. Toppes med pålæg, suppleres med
@@ -271,10 +282,13 @@
                 <img
                   src="images/formiddag.png"
                   alt="Formiddagskaffe"
+                  id="banan"
                   class="maaltidbillede"
                 />
               </div>
-              <div class="mySlides fade">
+            </div>
+            <div class="scroll3">
+              <div class="mySlides">
                 <h3 class="slidesheading">Middag</h3>
                 <p class="slidestext">
                   Det er her det ta'r fart! Vi snakker varm hovedret. Vi snakker
@@ -286,10 +300,13 @@
                 <img
                   src="images/frokost.png"
                   alt="Frisk Fisk til Frokost"
+                  id="fisk"
                   class="maaltidbillede"
                 />
               </div>
-              <div class="mySlides fade">
+            </div>
+            <div class="scroll4">
+              <div class="mySlides">
                 <h3 class="slidesheading">Eftermiddag</h3>
                 <p class="slidestext">
                   Okay, det er faktisk spild af tid at skrive det samme her, som
@@ -299,10 +316,13 @@
                 <img
                   src="images/eftermiddag.png"
                   alt="Eftermiddagen"
+                  id="the"
                   class="maaltidbillede"
                 />
               </div>
-              <div class="mySlides fade">
+            </div>
+            <div class="scroll5">
+              <div class="mySlides">
                 <h3 class="slidesheading">Aftensmaden</h3>
                 <p class="slidestext">
                   Hvem kan overhovedet sige nej til et stykke højtbelagt
@@ -313,10 +333,13 @@
                 <img
                   src="images/aftensmad.png"
                   alt="Aftensmaden kan være rullepølse"
+                  id="rullepoelse"
                   class="maaltidbillede"
                 />
               </div>
-              <div class="mySlides fade">
+            </div>
+            <div class="scroll6">
+              <div class="mySlides">
                 <h3 class="slidesheading">Aftenkaffe</h3>
                 <p class="slidestext">
                   Øhm... Ja. Det er det samme som formiddag og eftermiddag.
@@ -325,30 +348,35 @@
                 <img
                   src="images/aftenkaffe.png"
                   alt="Aftenkaffe"
+                  id="kaffe"
                   class="maaltidbillede"
                 />
               </div>
-              <div class="mySlides fade">
+            </div>
+            <div class="scroll7">
+              <div class="mySlides">
                 <h3 class="slidesheading">Weekend</h3>
                 <p class="slidestext">
                   I weekenderne stikker det helt af. Morgenmaden ruller til
                   9.30, så du kan pleje dit teenage-sove-gen. Og madudsigten
                   viser stor sandsynlighed rundstykker, og juice kan forekomme.
-                  Måske endda et blødkogt æg du kan tegne på.
-                  <br />
-                  Om aftenen spiser vi endda varmt, og så ignorerer vi
-                  kostrådene og spiser dessert om lørdagen og kage om søndagen.
-                  No regrets!
+                  Måske endda et blødkogt æg du kan tegne på. Om aftenen spiser
+                  vi endda varmt, og så ignorerer vi kostrådene og spiser
+                  dessert om lørdagen og kage om søndagen. No regrets!
                 </p>
                 <img
                   src="images/weekend.png"
                   alt="Blødkogt Æg"
+                  id="aeg"
                   class="maaltidbillede"
                 />
               </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+
+            <!--her er prev og next knapperne-->
+
+            <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
           </section>
           <section id="koekkenet">
             <h2>Køkkenet</h2>
