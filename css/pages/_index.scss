@@ -78,7 +78,7 @@
     display: block;
   }
   #kostpolitik {
-    height: 4250vh;
+    height: 40000px;
     #kostpolitik1 {
       position: fixed;
       top: 30%;
@@ -192,19 +192,24 @@
     }
   }
   #maaltider {
-    height: 1650vh;
+    height: 13734px;
+    h2 {
+      font-size: 3.5em;
+      margin: 15% 0 0 0;
+    }
     h3 {
       font-size: 2em;
+      text-align: center;
       margin-bottom: 2%;
       text-decoration: underline;
     }
     p {
       font-size: 1.5em;
+      text-align: center;
     }
   }
   .maaltidbillede {
-    margin: 2% 20% 0 20%;
-    width: 60%;
+    width: 120%;
   }
 
   #koekkenet {
@@ -264,6 +269,9 @@
   article {
     width: 100%;
     background: url("../images/grainybackground.jpg");
+  }
+  #kostraad {
+    height: 2823.3px;
   }
   #kostraadlist {
     display: flex;
@@ -346,6 +354,12 @@
   }
 
   #specialkost {
+    margin-top: 10%;
+    h2 {
+      text-align: center;
+      font-size: 3.5em;
+      margin-right: 10%;
+    }
     #specialkostflex {
       display: flex;
       justify-content: space-between;
@@ -355,32 +369,24 @@
       p {
         font-family: "Montserrat", sans-serif;
         font-size: 1.5em;
+        margin-right: 10%;
+        text-align: center;
       }
       #knivogtext {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         width: 30%;
+        margin-right: 6%;
+        margin-top: 6%;
         img {
           width: 100%;
           margin-right: -30%;
+          padding: 4% 0 12% 0;
         }
       }
     }
   }
-  #kodfri {
-    display: block;
-    p {
-      font-size: 1.5em;
-      margin-bottom: 2%;
-    }
-  }
-  #allergier {
-    display: none;
-  }
-  #religionoutput {
-    display: none;
-  }
+
   .scroll1 {
     position: fixed;
     top: 30%;

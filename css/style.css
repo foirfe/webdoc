@@ -410,7 +410,7 @@ header a {
 }
 
 #page__index #kostpolitik {
-  height: 4250vh;
+  height: 40000px;
 }
 
 #page__index #kostpolitik #kostpolitik1 {
@@ -539,22 +539,28 @@ header a {
 }
 
 #page__index #maaltider {
-  height: 1650vh;
+  height: 13734px;
+}
+
+#page__index #maaltider h2 {
+  font-size: 3.5em;
+  margin: 15% 0 0 0;
 }
 
 #page__index #maaltider h3 {
   font-size: 2em;
+  text-align: center;
   margin-bottom: 2%;
   text-decoration: underline;
 }
 
 #page__index #maaltider p {
   font-size: 1.5em;
+  text-align: center;
 }
 
 #page__index .maaltidbillede {
-  margin: 2% 20% 0 20%;
-  width: 60%;
+  width: 120%;
 }
 
 #page__index #koekkenet {
@@ -625,6 +631,10 @@ header a {
 #page__index article {
   width: 100%;
   background: url("../images/grainybackground.jpg");
+}
+
+#page__index #kostraad {
+  height: 2823.3px;
 }
 
 #page__index #kostraadlist {
@@ -744,6 +754,16 @@ header a {
   z-index: 3;
 }
 
+#page__index #specialkost {
+  margin-top: 10%;
+}
+
+#page__index #specialkost h2 {
+  text-align: center;
+  font-size: 3.5em;
+  margin-right: 10%;
+}
+
 #page__index #specialkost #specialkostflex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,6 +780,8 @@ header a {
 #page__index #specialkost #specialkostflex p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5em;
+  margin-right: 10%;
+  text-align: center;
 }
 
 #page__index #specialkost #specialkostflex #knivogtext {
@@ -770,32 +792,15 @@ header a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   width: 30%;
+  margin-right: 6%;
+  margin-top: 6%;
 }
 
 #page__index #specialkost #specialkostflex #knivogtext img {
   width: 100%;
   margin-right: -30%;
-}
-
-#page__index #kodfri {
-  display: block;
-}
-
-#page__index #kodfri p {
-  font-size: 1.5em;
-  margin-bottom: 2%;
-}
-
-#page__index #allergier {
-  display: none;
-}
-
-#page__index #religionoutput {
-  display: none;
+  padding: 4% 0 12% 0;
 }
 
 #page__index .scroll1 {

@@ -36,13 +36,13 @@ window.onscroll = () => {
     let pos11 = window .scrollY - 34400;
     let pos12 = window .scrollY - 35600;
     let pos13 = window .scrollY - 38800;
-    let pos14 = window.scrollY - 53300;
-    let pos15 = window.scrollY -54800;
-    let pos16 = window.scrollY -56300;
-    let pos17 = window.scrollY -57800;
-    let pos18 = window.scrollY -59300;
-    let pos19 = window.scrollY -510800;
-    let pos20 = window.scrollY -512300;
+    let pos14 = window.scrollY - 47000; //1500 mellem
+    let pos15 = window.scrollY -48500;
+    let pos16 = window.scrollY -50000;
+    let pos17 = window.scrollY -51500;
+    let pos18 = window.scrollY -53000;
+    let pos19 = window.scrollY -54500;
+    let pos20 = window.scrollY -56000;
     
 
     linje1.style.left =  `${pos}px`
