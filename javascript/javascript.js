@@ -12,7 +12,7 @@ const mainheading = document.getElementById("mainheading");
 var nowLoading;
 
 function myLoader() {
-  nowLoading = setTimeout(showPage, 3);
+  nowLoading = setTimeout(showPage, 2500);
 }
 
 function showPage() {
