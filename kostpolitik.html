@@ -140,8 +140,8 @@
               Vi har indsat emojis, så de unge ka' være med
             </h3>
             <ul id="kostraadlist">
-              <li class="kostraadleft" id="kostraad1">
-                <div class="kostraadblock">
+              <li class="kostraadleft" id="kostraad1observe">
+                <div class="kostraadblock slide-in-left" id="kostraad1">
                   <span class="kostraadlefttext"
                     >Skær ned på det mættede fedt</span
                   >
@@ -150,14 +150,14 @@
                 </div>
               </li>
               <li class="kostraadright">
-                <div class="kostraadblock">
+                <div class="kostraadblock slide-in-right" id="kostraad2">
                   <span class="kostraadnummer">2</span>
                   <span class="kostraadrighttext">Spis mindre sukker</span>
                   <span style="font-size: 3em">&#127849;</span>
                 </div>
               </li>
               <li class="kostraadleft">
-                <div class="kostraadblock">
+                <div class="kostraadblock slide-in-left" id="kostraad3">
                   <span class="kostraadlefttext">
                     Spis frugt og mange grøntsager</span
                   >
@@ -165,8 +165,8 @@
                   ><span class="kostraadnummer">3</span>
                 </div>
               </li>
-              <li class="kostraadright">
-                <div class="kostraadblock">
+              <li class="kostraadright" id="kostraad4">
+                <div class="kostraadblock slide-in-right">
                   <span class="kostraadrighttext">
                     <span class="kostraadnummer">4</span>
                     Spis varieret, og vær fysisk aktiv</span
@@ -175,7 +175,7 @@
                 </div>
               </li>
               <li class="kostraadleft">
-                <div class="kostraadblock">
+                <div class="kostraadblock slide-in-left" id="kostraad5">
                   <span class="kostraadlefttext"
                     >Spis mindre salt - du får rigeligt når du gamer</span
                   >
@@ -184,21 +184,21 @@
                 </div>
               </li>
               <li class="kostraadright">
-                <div class="kostraadblock">
+                <div class="kostraadblock slide-in-right" id="kostraad6">
                   <span class="kostraadnummer">6</span>
                   <span class="kostraadrighttext">Spis fisk</span>
                   <span style="font-size: 3em">&#129500;</span>
                 </div>
               </li>
               <li class="kostraadleft">
-                <div class="kostraadblock">
+                <div class="kostraadblock slide-in-left" id="kostraad7">
                   <span class="kostraadlefttext"
                     >Vælg fuldkorn - indsæt fuldkornsemoji</span
                   ><span class="kostraadnummer">7</span>
                 </div>
               </li>
               <li class="kostraadright">
-                <div class="kostraadblock">
+                <div class="kostraadblock slide-in-right" id="kostraad8">
                   <span class="kostraadnummer">8</span>
                   <span class="kostraadrighttext"
                     >Vælg magert kød og kødpålæg</span
@@ -207,7 +207,7 @@
                 </div>
               </li>
               <li class="kostraadleft">
-                <div class="kostraadblock">
+                <div class="kostraadblock slide-in-left" id="kostraad9">
                   <span class="kostraadlefttext"
                     >Vælg magre mejeriprodukter</span
                   >
@@ -215,7 +215,7 @@
                   ><span class="kostraadnummer">9</span>
                 </div>
               </li>
-              <li class="kostraadright">
+              <li class="kostraadright slide-in-right" id="kostraad10">
                 <div class="kostraadblock">
                   <span class="kostraadnummer">10</span>
                   <span class="kostraadrighttext">Drik Vand</span>
@@ -227,44 +227,20 @@
 
           <section id="specialkost">
             <h2>Specialkost</h2>
+            <img
+              src="images/forkpynt.png"
+              alt="Hvad mon der sker hvis du trykker på mig?"
+              id="gaffelcursor"
+            />
             <p>
-              Vi er godt klar over, at nogle har omstændigheder i deres liv, der
-              gør de ikke ka' spise alt i hele Verden. Det tager vi selvfølgelig
+              Køkken-Hanne... Eller skulle vi sige Ridder-Hanne? Ridder-Hanne er
+              en forkæmper for børn og unge der har brug for specialkost! Vi er
+              godt klar over, at nogle har omstændigheder i deres liv, der gør
+              de ikke ka' spise alt i hele Verden. Det tager vi selvfølgelig
               hensyn til. Vi lægger stor vægt på, at specialkost ikke bare skal
               være en slatten gulerod, men rent faktisk noget der er ligeså
               lækkert som hvad alle andre spiser.
             </p>
-            <ul id="specialkostlist">
-              <li id="meatfree" class="specialkostmarked">Kødfri</li>
-              <li id="allergies">Allergier</li>
-              <li id="religion">Tro</li>
-            </ul>
-
-            <div id="kodfri">
-              <h2>Kødfri:</h2>
-              <p>
-                Jeg har lavet en aftale med kaninen om, at den selv bestemmer
-                hvad den vil spise. Så det skal du selvfølgelig også ha' lov
-                til! Det er dog vigtigt at understrege at vi skal informeres om
-                det inden du starter!
-              </p>
-            </div>
-            <div id="allergier">
-              <h2>Allergier:</h2>
-              <p>
-                Hvis lægen har sagt du ikke kan tåle det, så ta'r vi
-                selvfølgelig hensyn til det. Hvis din mor og far siger du ikke
-                kan tåle det, så hvisk det til os når I kommer på besøg!
-              </p>
-            </div>
-            <div id="religionoutput">
-              <h2>Tro:</h2>
-              <p>
-                Vi respekterer selvfølgelig, hvis der er nogle ting du ikke
-                ønsker at spise på grund af din tro eller religion. Tror vi
-                springer over jokesne i denne her sektion.
-              </p>
-            </div>
           </section>
           <section id="maaltider">
             <h2>Måltider</h2>
@@ -408,5 +384,6 @@
     </div>
     <script src="javascript/javascript.js"></script>
     <script src="javascript/kostpolitikken.js"></script>
+    <script src="javascript/observers.js"></script>
   </body>
 </html>

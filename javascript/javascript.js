@@ -7,6 +7,8 @@ const religion = document.getElementById("religion");
 const religionoutput = document.getElementById("religionoutput");
 const storkniv = document.getElementById("storkniv");
 const mainheading = document.getElementById("mainheading");
+const forkcursor = document.getElementById("gaffelcursor");
+
 
 //Loader til siden
 var nowLoading;
@@ -20,34 +22,6 @@ function showPage() {
   document.getElementById("insidebody").style.display = "block";
 }
 
-//Her skifter det specialkost div alt efter hvilken knap der bliver trykket på.
-meatfree.addEventListener("click", function(){
-    if (kodfri.style.display === "none") {
-    meatfree.classList.add("specialkostmarked");
-        kodfri.style.display = "block";
-        allergier.style.display = "none";
-        religionoutput.style.display = "none";
-        allergies.classList.remove("specialkostmarked");
-        religion.classList.remove("specialkostmarked");
-      }
-    })
-
-allergies.addEventListener("click", function(){
-        allergier.style.display = "block";
-        kodfri.style.display = "none";
-        religionoutput.style.display = "none";
-        allergies.classList.add("specialkostmarked");
-        meatfree.classList.remove("specialkostmarked");
-        religion.classList.remove("specialkostmarked")
-})
-religion.addEventListener("click", function(){
-    religionoutput.style.display = "block";
-    kodfri.style.display = "none";
-    allergier.style.display = "none";
-    allergies.classList.remove("specialkostmarked");
-    religion.classList.add("specialkostmarked");
-    meatfree.classList.remove("specialkostmarked");
-})
 
 
 //Slideshow functionen, med hjælp fra W3Schools
@@ -121,3 +95,14 @@ for(var i=0;i<2;i++){
     eyeball.style.top = y;
 }
 }
+
+forkcursor.addEventListener("click", function(){
+  if(body.classList.contains("kniv")){
+    const body = document.getElementById("wholebody");
+    body.classList.remove("kniv")
+    body.classList.add("gaffel")
+    forkcursor.classList.add("slide-out-right")
+  }})
+
+
+  
