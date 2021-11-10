@@ -50,26 +50,6 @@ religion.addEventListener("click", function(){
 })
 
 
-//Slideshow functionen, med hjælp fra W3Schools
-var slideIndex = 1;
-showSlides(slideIndex);
-
-//Functionen som gør at man kan skifte frem og tilbage i slideshowet
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
 
 
 
@@ -121,4 +101,34 @@ for(var i=0;i<2;i++){
     eyeball.style.top = y;
 }
 }
+
+
+
+//her kan man scrolle i stedet for slideshow
+let scroll1 = document.querySelector('.scroll1');
+let scroll2 = document.querySelector('.scroll2');
+let scroll3 = document.querySelector('.scroll3');
+let scroll4 = document.querySelector('.scroll4');
+let scroll5 = document.querySelector('.scroll5');
+let scroll6 = document.querySelector('.scroll6');
+let scroll7 = document.querySelector('.scroll7');
+
+window.onscroll = () =>{
+  let pos1 = window.scrollY -3300;
+  let pos2 = window.scrollY -4800;
+  let pos3 = window.scrollY -6300;
+  let pos4 = window.scrollY -7800;
+  let pos5 = window.scrollY -9300;
+  let pos6 = window.scrollY -10800;
+  let pos7 = window.scrollY -12300;
+  scroll1.style.left = `${pos1}px`;
+  scroll2.style.left = `${pos2}px`;
+  scroll3.style.left = `${pos3}px`;
+  scroll4.style.left = `${pos4}px`;
+  scroll5.style.left = `${pos5}px`;
+  scroll6.style.left = `${pos6}px`;
+  scroll7.style.left = `${pos7}px`;
+}
+
+
 
