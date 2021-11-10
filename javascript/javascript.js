@@ -71,39 +71,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
-(function() {
-  var delay = false;
 
-
-  //Havde svært med at finde løsning til en god scroll, så blev nødt til at låne et fra Jquery. og ændre lidt i koden der
-  $(document).on('mousewheel DOMMouseScroll', function(event) {
-    if(delay) return;
-
-    delay = true;
-    setTimeout(function(){delay = false},200)
-
-    var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
-//Gør at hvert scroll fører til de forskellige sectioner
-    var a= document.getElementsByTagName('section');
-    if(wd < 0) {
-      for(var i = 0 ; i < a.length ; i++) {
-        var t = a[i].getClientRects()[0].top;
-        if(t >= 40) break;
-      }
-    }
-    else {
-      for(var i = a.length-1 ; i >= 0 ; i--) {
-        var t = a[i].getClientRects()[0].top;
-        if(t < -20) break;
-      }
-    }
-    if(i >= 0 && i < a.length) {
-      $('html,body').animate({
-        scrollTop: a[i].offsetTop
-      });
-    }
-  });
-})();
 
 //Gør således at sidebaren får en active class når den bliver trykket på
 const allItems = document.querySelectorAll(".sidebar ul li a");
@@ -153,3 +121,4 @@ for(var i=0;i<2;i++){
     eyeball.style.top = y;
 }
 }
+
