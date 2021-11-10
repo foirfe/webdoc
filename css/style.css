@@ -807,8 +807,7 @@ header a {
   position: fixed;
   top: 30%;
   left: -800px;
-  height: 800vh;
-  width: 1000px;
+  width: 50%;
 }
 
 #page__index .scroll2 {
@@ -816,7 +815,7 @@ header a {
   top: 30%;
   left: -800px;
   height: 800vh;
-  width: 1000px;
+  width: 50%;
 }
 
 #page__index .scroll3 {
@@ -824,7 +823,7 @@ header a {
   top: 30%;
   left: -800px;
   height: 800vh;
-  width: 1000px;
+  width: 50%;
 }
 
 #page__index .scroll4 {
@@ -832,7 +831,7 @@ header a {
   top: 30%;
   left: -800px;
   height: 800vh;
-  width: 1000px;
+  width: 50%;
 }
 
 #page__index .scroll5 {
@@ -840,7 +839,7 @@ header a {
   top: 30%;
   left: -800px;
   height: 800vh;
-  width: 1000px;
+  width: 50%;
 }
 
 #page__index .scroll6 {
@@ -848,7 +847,7 @@ header a {
   top: 30%;
   left: -800px;
   height: 800vh;
-  width: 1000px;
+  width: 50%;
 }
 
 #page__index .scroll7 {
@@ -856,6 +855,6 @@ header a {
   top: 30%;
   left: -800px;
   height: 800vh;
-  width: 1000px;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
