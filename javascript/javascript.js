@@ -105,7 +105,7 @@ function showSlides(n) {
   });
 })();
 
-
+//Gør således at sidebaren får en active class når den bliver trykket på
 const allItems = document.querySelectorAll(".sidebar ul li a");
 
 allItems.forEach(item => {
@@ -118,6 +118,7 @@ for(var i=0; i < allItems.length; i ++) {
     });
 });
 
+//Gør således at sidebaren får en active class hvis den section id i vinduet passer med classen i sidebaren
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".sidebar ul li a");
 window.onscroll = () => {
@@ -136,3 +137,19 @@ window.onscroll = () => {
     }
   });
 };
+
+
+//Øje der følger en efter hvor musen er på den sektion
+var eyeball = document.getElementById("eyeball");
+const eyesection = document.getElementById("eyesection");
+const body = document.querySelector("body")
+
+body.onmousemove = function(event){
+    var x = event.clientX * 10 / window.innerWidth + "%";
+    var y = event.clientY * 10 / window.innerHeight + "%";
+
+for(var i=0;i<2;i++){
+    eyeball.style.left = x;
+    eyeball.style.top = y;
+}
+}
