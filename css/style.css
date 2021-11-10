@@ -303,7 +303,7 @@ header a {
 
 #page__index #sidebar {
   position: fixed;
-  top: 0%;
+  top: -1.25%;
   left: 15%;
   padding-top: 5%;
   text-align: center;
@@ -338,7 +338,7 @@ header a {
 }
 
 #page__index #sidebar ul li a {
-  text-decoration: none;
+  text-decoration: underline;
   position: relative;
   color: black;
   font-size: 1.5rem;
@@ -349,7 +349,7 @@ header a {
 #page__index #sidebar ul li a::before {
   content: "";
   position: absolute;
-  background: white;
+  background: crimson;
   width: 18px;
   height: 18px;
   left: 39%;
@@ -367,7 +367,7 @@ header a {
 }
 
 #page__index #sidebar ul li a.active::before {
-  background: crimson;
+  background: #fff;
 }
 
 #page__index section {
@@ -462,7 +462,7 @@ header a {
 #page__index #kostpolitik #kostpolitik10 {
   position: fixed;
   top: 50%;
-  left: -1200px;
+  left: -5000px;
   white-space: nowrap;
   font-family: "Inconsolata", monospace;
   font-size: 1.2em;
@@ -601,6 +601,13 @@ header a {
   font-size: 4em;
 }
 
+#page__index #kostraadheading {
+  text-align: center;
+  font-family: "Zen Antique", serif;
+  font-size: 1.3em;
+  margin: 2% 0 3% 0;
+}
+
 #page__index .kostraadleft {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -613,16 +620,22 @@ header a {
 #page__index .kostraadblock {
   margin-bottom: 5%;
   background-color: #ffd000;
+  width: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #page__index .kostraadnummer {
   font-size: 2em;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
 #page__index .kostraadright {
