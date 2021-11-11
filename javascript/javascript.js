@@ -20,7 +20,8 @@ function myLoader() {
 function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("insidebody").style.display = "block";
-}
+  }
+
 
 
 
@@ -42,7 +43,7 @@ for(var i=0; i < allItems.length; i ++) {
 });
 
 //Bruges til functionen aktivNavBar
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section:not(.mobil)");
 const navLi = document.querySelectorAll(".sidebar ul li a");
 
 

@@ -94,4 +94,15 @@ window.onscroll = () => {
     rulleTekst();
 }
 
-//her kan man scrolle i stedet for slideshow
+
+function play() {
+  var audio = document.getElementById("myAudio");
+  audio.play();
+  audio.volume = 0.3;
+}
+
+window.onclick = () => { 
+play();
+}
+
+

@@ -314,36 +314,27 @@ header a {
   cursor: url(../images/forkcursor.png), auto;
 }
 
+video#mainpagevideo {
+  width: 100%;
+}
+
+html {
+  width: 100%;
+}
+
 #page__index {
   background: url("../images/grainybackground.jpg");
   background-size: auto;
   background-repeat: repeat;
 }
 
-#page__index #mainpagevideo {
-  width: 100%;
-}
-
-#page__index .storkniv {
-  position: fixed;
-  width: 30%;
-  left: 0;
-  margin-left: 40%;
-}
-
-#page__index .tomaten {
-  width: 30%;
-  margin-left: 40%;
-}
-
 #page__index #sidebar {
+  display: none;
   position: fixed;
   top: 0;
-  left: 19.5%;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  height: 100%;
-  width: 10%;
+  width: 100%;
   z-index: 6;
 }
 
@@ -354,26 +345,14 @@ header a {
   margin: 0 auto;
   position: relative;
   text-align: left;
-}
-
-#page__index #sidebar ul::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: calc(100% - 58px);
-  top: 0;
-  background: crimson;
-  z-index: -5;
-  margin-top: 29px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #ff8f1f;
 }
 
 #page__index #sidebar ul li {
-  background: #ff8f1f;
-  padding: 10%;
-}
-
-#page__index #sidebar ul li:not(:first-child) {
-  padding-left: 78%;
+  padding: 1%;
 }
 
 #page__index #sidebar ul li a {
@@ -392,11 +371,24 @@ header a {
   font-size: 1.7em;
 }
 
-#page__index section {
-  display: block;
+#page__index #kostpolitikmobil {
+  color: white;
+  width: 100%;
+}
+
+#page__index #kostpolitikmobil h2 {
+  font-family: "Zen Antique", serif;
+}
+
+#page__index #kostpolitikmobil p {
+  width: 98%;
+  font-size: 1em;
+  margin: 0 1% 0 1%;
+  font-family: "Montserrat", sans-serif;
 }
 
 #page__index #kostpolitik {
+  display: none;
   height: 40000px;
   color: white;
 }
@@ -526,7 +518,40 @@ header a {
   font-size: 2em;
 }
 
+#page__index #maaltidermobil {
+  display: block;
+  width: 100%;
+}
+
+#page__index #maaltidermobil img {
+  width: 100%;
+}
+
+#page__index #maaltidermobil h2 {
+  font-family: "Zen Antique", serif;
+  color: white;
+  font-size: 2em;
+}
+
+#page__index #maaltidermobil h3 {
+  font-family: "Zen Antique", serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 2%;
+  text-decoration: underline;
+  color: white;
+}
+
+#page__index #maaltidermobil p {
+  font-size: 1em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin: 5% 1% 5% 1%;
+}
+
 #page__index #maaltider {
+  display: none;
   height: 13734px;
 }
 
@@ -555,8 +580,36 @@ header a {
   width: 120%;
 }
 
+#page__index #koekkenetmobil {
+  display: block;
+  width: 100%;
+}
+
+#page__index #koekkenetmobil img {
+  width: 100%;
+}
+
+#page__index #koekkenetmobil h2 {
+  font-family: "Zen Antique", serif;
+  color: white;
+  font-size: 2em;
+}
+
+#page__index #koekkenetmobil p {
+  font-size: 1em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin: 5% 1% 5% 1%;
+}
+
+#page__index #koekkenetmobil #koekkenvideomobil {
+  width: 100%;
+}
+
 #page__index #koekkenet {
   font-family: "Montserrat", sans-serif;
+  display: none;
 }
 
 #page__index #koekkenet #koekkenflex {
@@ -652,7 +705,33 @@ header a {
   background: linear-gradient(#090411, #241f2d, #322555, #dad0dd) no-repeat;
 }
 
+#page__index #kostraadmobil {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#page__index #kostraadmobil h2 {
+  font-family: "Zen Antique", serif;
+  margin: 3% auto 5% auto;
+  font-size: 1.3em;
+}
+
+#page__index #kostraadmobil h3 {
+  font-size: 0.8em;
+  margin-bottom: 2%;
+}
+
+#page__index #kostraadmobil .kostraadpamobil {
+  background: #ffd000;
+  border: 1px solid black;
+  padding: 2%;
+  color: black;
+}
+
 #page__index #kostraad {
+  display: none;
   height: 2823.3px;
 }
 
@@ -762,6 +841,7 @@ header a {
 }
 
 #page__index #eyesection {
+  display: none;
   background: #dad0dd;
 }
 
@@ -779,9 +859,26 @@ header a {
   z-index: 3;
 }
 
+#page__index #specialkostmobil {
+  display: block;
+  color: white;
+}
+
+#page__index #specialkostmobil h2 {
+  font-family: "Zen Antique", serif;
+}
+
+#page__index #specialkostmobil p {
+  width: 98%;
+  font-size: 1em;
+  margin: 0 1% 0 1%;
+  font-family: "Montserrat", sans-serif;
+}
+
 #page__index #specialkost {
   margin-top: 10%;
   color: white;
+  display: none;
 }
 
 #page__index #specialkost h2 {
@@ -825,7 +922,7 @@ header a {
 }
 
 #page__index #specialkost #specialkostflex #knivogtext img {
-  width: 100%;
+  max-width: 100%;
   margin-right: -30%;
   padding: 4% 0 12% 0;
 }
@@ -883,5 +980,44 @@ header a {
   left: -800px;
   height: 800vh;
   width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #page__index #kostpolitikmobil {
+    display: none;
+  }
+  #page__index #kostraadmobil {
+    display: none;
+  }
+  #page__index #specialkostmobil {
+    display: none;
+  }
+  #page__index #maaltidermobil {
+    display: none;
+  }
+  #page__index #koekkenetmobil {
+    display: none;
+  }
+  #page__index #kostpolitik {
+    display: block;
+  }
+  #page__index #kostraad {
+    display: block;
+  }
+  #page__index #specialkost {
+    display: block;
+  }
+  #page__index #maaltider {
+    display: block;
+  }
+  #page__index #koekkenet {
+    display: block;
+  }
+  #page__index #eyesection {
+    display: block;
+  }
+  #page__index #sidebar {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
