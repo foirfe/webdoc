@@ -8,13 +8,13 @@ const religionoutput = document.getElementById("religionoutput");
 const storkniv = document.getElementById("storkniv");
 const mainheading = document.getElementById("mainheading");
 const forkcursor = document.getElementById("gaffelcursor");
-
+const knifecursor = document.getElementById("knifecursor");
 
 //Loader til siden
 var nowLoading;
 
 function myLoader() {
-  nowLoading = setTimeout(showPage, 2);//2300 normal
+  nowLoading = setTimeout(showPage, 2300);//2300 normal
 }
 
 function showPage() {
@@ -41,25 +41,10 @@ for(var i=0; i < allItems.length; i ++) {
     });
 });
 
-//Gør således at sidebaren får en active class hvis den section id i vinduet passer med classen i sidebaren
+//Bruges til functionen aktivNavBar
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll(".sidebar ul li a");
-window.onscroll = () => {
-  var current = "";
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    if (scrollY >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
-  });
-
-  navLi.forEach((a) => {
-    a.classList.remove("active");
-    if (a.classList.contains(current)) {
-      a.classList.add("active");
-    }
-  });
-};
 
 
 //Øje der følger en efter hvor musen er på den sektion
@@ -76,13 +61,24 @@ for(var i=0;i<2;i++){
     eyeball.style.top = y;
 }
 }
-
+//Skifter cursor hvis man klikker på de to connectede billeder
 forkcursor.addEventListener("click", function(){
   if(body.classList.contains("kniv")){
     const body = document.getElementById("wholebody");
     body.classList.remove("kniv")
     body.classList.add("gaffel")
     forkcursor.classList.add("slide-out-right")
+    knifecursor.classList.remove("slide-out-right")
+  }})
+
+  
+knifecursor.addEventListener("click", function(){
+  if(body.classList.contains("gaffel")){
+    const body = document.getElementById("wholebody");
+    body.classList.remove("gaffel")
+    body.classList.add("kniv")
+    forkcursor.classList.remove("slide-out-right")
+    knifecursor.classList.add("slide-out-right")
   }})
 
 

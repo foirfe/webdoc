@@ -18,17 +18,17 @@
   }
   #sidebar {
     position: fixed;
-    top: -1.25%;
-    left: 15%;
-    padding-top: 5%;
+    top: 0;
+    left: 19.5%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     height: 100%;
     width: 10%;
     z-index: 6;
+
     ul {
       display: flex;
-      padding-left: 50px;
+      margin: 0 auto;
       position: relative;
       text-align: left;
       &::after {
@@ -42,32 +42,23 @@
         margin-top: 29px;
       }
       li {
-        margin-left: 78%;
+        background: #ff8f1f;
+        padding: 10%;
+        &:not(:first-child) {
+          padding-left: 78%;
+        }
         a {
-          text-decoration: underline;
+          text-decoration: none;
           position: relative;
           color: black;
+          background-color: #ff8f1f;
           font-size: 1.5rem;
           line-height: 1rem;
           font-weight: 500;
-          &::before {
-            content: "";
-            position: absolute;
-            background: crimson;
-            width: 18px;
-            height: 18px;
-            left: 39%;
-            top: 150%;
-            transform: translateY(-50%);
-            border-radius: 50px;
-            border: 4px solid crimson;
-            transition: background 250ms;
-          }
           &.active {
             font-weight: 700;
-          }
-          &.active::before {
-            background: #fff;
+            text-decoration: underline;
+            font-size: 1.7em;
           }
         }
       }
@@ -79,6 +70,7 @@
   }
   #kostpolitik {
     height: 40000px;
+    color: white;
     #kostpolitik1 {
       position: fixed;
       top: 30%;
@@ -194,10 +186,13 @@
   #maaltider {
     height: 13734px;
     h2 {
-      font-size: 3.5em;
+      font-family: "Zen Antique", serif;
+      color: white;
+      font-size: 4em;
       margin: 15% 0 0 0;
     }
     h3 {
+      font-family: "Zen Antique", serif;
       font-size: 2em;
       text-align: center;
       margin-bottom: 2%;
@@ -206,6 +201,7 @@
     p {
       font-size: 1.5em;
       text-align: center;
+      font-family: "Montserrat", sans-serif;
     }
   }
   .maaltidbillede {
@@ -213,11 +209,30 @@
   }
 
   #koekkenet {
-    color: black;
     font-family: "Montserrat", sans-serif;
+    #koekkenflex {
+      display: flex;
+
+      img {
+        width: 10%;
+        height: 20%;
+        &#gren {
+          margin: 20% 0;
+        }
+      }
+    }
+    h2 {
+      font-size: 3em;
+      margin-bottom: 3%;
+    }
+    p {
+      width: 50%;
+      text-align: center;
+      margin: 0 auto 2% auto;
+      font-size: 1.5em;
+    }
     #koekkenvideo {
-      width: 80%;
-      margin: 0 10% 0 10%;
+      width: 100%;
     }
   }
   h1 {
@@ -240,6 +255,7 @@
     padding-bottom: 3%;
     font-size: 3.5em;
     margin-top: 5%;
+    font-family: "Zen Antique", serif;
   }
   #vaerdierheading {
     margin-top: 15%;
@@ -268,10 +284,14 @@
 
   article {
     width: 100%;
-    background: url("../images/grainybackground.jpg");
+    background: linear-gradient(#090411, #241f2d, #322555, #dad0dd) no-repeat;
   }
   #kostraad {
     height: 2823.3px;
+    h2 {
+      color: white;
+      font-family: "Zen Antique", serif;
+    }
   }
   #kostraadlist {
     display: flex;
@@ -312,7 +332,8 @@
   }
   #kostraadheading {
     text-align: center;
-    font-family: "Zen Antique", serif;
+    color: white;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.3em;
     margin: 2% 0 3% 0;
   }
@@ -355,7 +376,9 @@
 
   #specialkost {
     margin-top: 10%;
+    color: white;
     h2 {
+      font-family: "Zen Antique", serif;
       text-align: center;
       font-size: 3.5em;
       margin-right: 10%;
